@@ -1,270 +1,158 @@
-# University Department Chatbot - Flask Edition
+# University Department Chatbot
 
-A professional, production-ready chatbot application built with **Flask** for learning LLM integration. This project demonstrates best practices in Flask development while building an intelligent chatbot with RAG (Retrieval Augmented Generation) capabilities.
+A Flask-based chatbot application with LLM integration and RAG (Retrieval Augmented Generation) capabilities.
 
-## 🎯 Why Flask for Learning LLMs?
+## Overview
 
-Flask is **perfect for learning LLM integration** because:
+This project provides a professional chatbot API built with Flask, featuring:
 
-- **🔍 Explicit & Clear**: Every component is visible and understandable
-- **📚 Educational**: Great for understanding web frameworks fundamentals  
-- **🛠️ Flexible**: Easy to experiment with different LLM approaches
-- **🏗️ Modular**: Clean separation of concerns with blueprints
-- **🚀 Industry Standard**: Used by many companies for ML/AI applications
+- RESTful API architecture with Flask blueprints
+- LLM integration with multiple providers (OpenAI, Ollama, OpenRouter)
+- Vector database for semantic search (ChromaDB, FAISS)
+- Interactive API documentation with Swagger/OpenAPI
+- Modular service layer architecture
 
-## 🏗️ Professional Flask Architecture
+## Project Structure
 
 ```
-university-chatbot/
-├── 📄 run.py                    # Application entry point
-├── 📄 requirements.txt          # Python dependencies  
-├── 📄 .flaskenv                 # Flask environment variables
-├── 📄 .env.example             # Environment template
-├── 📄 Makefile                 # Development commands
-│
-├── 📁 app/                     # Main application package
-│   ├── __init__.py             # Flask app factory
-│   ├── 📁 api/                 # API blueprints (routes)
-│   │   └── __init__.py         # Blueprint registration
-│   ├── 📁 models/              # SQLAlchemy models
-│   │   └── __init__.py         # Database models
-│   ├── 📁 services/            # Business logic services
-│   │   └── __init__.py         # LLM, Vector, Chat services
-│   ├── 📁 utils/               # Utility functions
-│   │   └── __init__.py         # Helpers and utilities
-│   ├── 📁 static/              # Static files (CSS, JS, images)
-│   └── 📁 templates/           # Jinja2 templates
-│
-├── 📁 config/                  # Configuration management
-│   └── __init__.py             # Config classes
-│
-├── 📁 tests/                   # Test suite
-│   └── __init__.py             # Test modules
-│
-├── 📁 docs/                    # Documentation
-│   └── README.md               # Documentation index
-│
-├── 📁 data/                    # Data storage
-│   ├── university_data.json   # University Q&A data
-│   └── chroma_db/             # Vector database
-│
-└── 📁 migrations/              # Database migrations (auto-generated)
+llm-practice/
+├── run.py                      # Application entry point
+├── requirment.txt              # Python dependencies
+├── Makefile                    # Development commands
+├── app/
+│   ├── api/                    # API routes and blueprints
+│   ├── models/                 # Database models
+│   ├── services/               # Business logic (LLM, Vector DB)
+│   ├── utils/                  # Helper functions
+│   ├── static/                 # Static assets
+│   └── templates/              # HTML templates
+├── config/
+│   ├── __init__.py             # Configuration classes
+│   └── swagger_config.py       # API documentation config
+├── data/                       # Application data
+├── tests/                      # Test suite
+└── docs/                       # Documentation
 ```
 
-## 🎓 Flask Best Practices Implemented
+## Getting Started
 
-### **1. Application Factory Pattern**
-```python
-# app/__init__.py
-def create_app(config_name='development'):
-    app = Flask(__name__)
-    app.config.from_object(config[config_name])
-    
-    # Initialize extensions
-    db.init_app(app)
-    migrate.init_app(app, db)
-    
-    # Register blueprints
-    from app.api import bp as api_bp
-    app.register_blueprint(api_bp, url_prefix='/api')
-    
-    return app
-```
+### Prerequisites
 
-### **2. Blueprint Architecture**
-```python
-# app/api/__init__.py
-from flask import Blueprint
+- Python 3.8 or higher
+- Virtual environment (recommended)
 
-bp = Blueprint('api', __name__)
-
-# Import routes after blueprint creation
-from app.api import chat, health, admin
-```
-
-### **3. Configuration Management**
-```python
-# config/__init__.py
-class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-
-class DevelopmentConfig(Config):
-    DEBUG = True
-    
-class ProductionConfig(Config):
-    DEBUG = False
-```
-
-### **4. Service Layer Pattern**
-```python
-# app/services/llm_service.py
-class LLMService:
-    def __init__(self):
-        self.provider = current_app.config['LLM_PROVIDER']
-    
-    def generate_response(self, message, context=None):
-        # LLM integration logic
-        pass
-```
-
-## 🚀 Development Workflow
-
-### **Quick Start**
+### Installation
+1. Clone the repository and create a virtual environment:
 ```bash
-# 1. Setup environment
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or: venv\Scripts\activate  # Windows
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-# 2. Install dependencies
-make install
-# or: pip install -r requirements.txt
+2. Install dependencies:
+```bash
+pip install -r requirment.txt
+```
 
-# 3. Setup environment
+3. Set up environment variables:
+```bash
 cp .env.example .env
 # Edit .env with your API keys
-
-# 4. Initialize database
-make init-db
-# or: flask db init && flask db migrate && flask db upgrade
-
-# 5. Run development server
-make run
-# or: flask run
 ```
 
-### **Development Commands**
+4. Run the application:
 ```bash
-make help          # Show all available commands
+python run.py
+```
+
+The application will start at `http://localhost:5000`
+
+### API Documentation
+
+Interactive API documentation is available at:
+- **Swagger UI**: `http://localhost:5000/apidocs`
+- **OpenAPI Spec**: `http://localhost:5000/apispec.json`
+
+## Development Commands
+
+Using the Makefile:
+```bash
 make install       # Install dependencies
 make run           # Start development server
 make test          # Run tests
-make test-cov      # Run tests with coverage
 make lint          # Check code quality
-make format        # Format code
 make clean         # Clean cache files
-make init-db       # Initialize database
-make reset-db      # Reset database
-make dev-setup     # Complete development setup
 ```
 
-## 📚 Learning Path for LLM Integration
+## Key Technologies
 
-### **Phase 1: Flask Fundamentals** 
-- [ ] Understand Flask app factory pattern
-- [ ] Learn blueprint organization
-- [ ] Master configuration management
-- [ ] Implement database models
+### Backend Framework
+- **Flask 3.0.3** - Lightweight web framework
+- **Flasgger 0.9.7.1** - Swagger/OpenAPI documentation
 
-### **Phase 2: LLM Integration**
-- [ ] Create LLM service abstraction
-- [ ] Implement multiple LLM providers (OpenAI, Ollama, OpenRouter)
-- [ ] Add prompt engineering capabilities
-- [ ] Handle streaming responses
+### Database & ORM
+- **SQLAlchemy** - Database ORM
+- **Flask-Migrate** - Database migrations
+- **PostgreSQL/SQLite** - Database support
 
-### **Phase 3: RAG Implementation**
-- [ ] Integrate vector databases (ChromaDB, FAISS)
-- [ ] Implement document embedding
-- [ ] Create semantic search
-- [ ] Build context retrieval
+### AI/ML Stack
+- **LangChain** - LLM framework
+- **OpenAI/Ollama** - LLM providers
+- **ChromaDB** - Vector database for RAG
+- **Sentence-Transformers** - Text embeddings
+- **FAISS** - Vector similarity search
 
-### **Phase 4: Advanced Features**
-- [ ] Add conversation memory
-- [ ] Implement user sessions
-- [ ] Create admin interface
-- [ ] Add monitoring and analytics
+### Additional Features
+- **Flask-CORS** - Cross-origin resource sharing
+- **Flask-JWT-Extended** - Authentication
+- **Flask-Limiter** - Rate limiting
+- **Celery** - Background task processing
+- **Redis** - Caching and sessions
 
-## 🔧 Key Flask Extensions Used
+## Architecture
 
-### **Core Extensions**
-- **Flask-SQLAlchemy**: Database ORM
-- **Flask-Migrate**: Database migrations
-- **Flask-CORS**: Cross-origin resource sharing
-- **Flask-Limiter**: Rate limiting
-- **Flask-JWT-Extended**: Authentication
+The project follows a modular architecture with clear separation of concerns:
 
-### **AI/ML Extensions**
-- **LangChain**: LLM framework integration
-- **ChromaDB**: Vector database for RAG
-- **Sentence-Transformers**: Text embeddings
-- **OpenAI/Ollama**: LLM providers
+- **API Layer** (`app/api/`) - RESTful endpoints and request handling
+- **Service Layer** (`app/services/`) - Business logic and LLM integration
+- **Model Layer** (`app/models/`) - Database models and schemas
+- **Configuration** (`config/`) - Application settings and environment management
 
-### **Development Extensions**
-- **Flask-Testing**: Testing utilities
-- **Marshmallow**: Serialization/validation
-- **Celery**: Background tasks
-- **Redis**: Caching and sessions
+## Features
 
-## 🎯 Project Structure Benefits
+- **RESTful API** - Clean, well-structured API endpoints
+- **LLM Integration** - Support for multiple LLM providers
+- **Vector Search** - Semantic search using RAG
+- **API Documentation** - Interactive Swagger UI
+- **Authentication** - JWT-based authentication
+- **Rate Limiting** - Request throttling for API protection
+- **Database Support** - PostgreSQL and SQLite
+- **Background Tasks** - Async processing with Celery
+- **Testing** - Comprehensive test suite
 
-### **For Learning:**
-- **Clear Separation**: Each component has a specific purpose
-- **Gradual Complexity**: Start simple, add features incrementally
-- **Visible Patterns**: Flask patterns are explicit and educational
-- **Easy Debugging**: Simple request/response cycle
+## Testing
 
-### **For Production:**
-- **Scalable Architecture**: Blueprint-based modular design
-- **Testable Code**: Service layer separation enables easy testing
-- **Configurable**: Environment-based configuration
-- **Maintainable**: Clean code organization
-
-## 🔄 Development Process
-
-### **1. Start with Models**
-```python
-# app/models/chat.py
-class ChatSession(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    session_id = db.Column(db.String(255), unique=True)
-    # ... other fields
+Run tests using:
+```bash
+make test
+# or
+pytest
 ```
 
-### **2. Create Services**
-```python
-# app/services/chat_service.py
-class ChatService:
-    def process_message(self, message, session_id):
-        # Business logic here
-        pass
+Run tests with coverage:
+```bash
+make test-cov
+# or
+pytest --cov=app tests/
 ```
 
-### **3. Build API Endpoints**
-```python
-# app/api/chat.py
-@bp.route('/message', methods=['POST'])
-def send_message():
-    # Route logic here
-    pass
-```
+## License
 
-### **4. Add Tests**
-```python
-# tests/test_chat.py
-def test_send_message(client):
-    # Test logic here
-    pass
-```
+This project is licensed under the MIT License.
 
-## 🎓 Why This Structure is Perfect for Learning
+## Contributing
 
-1. **🔍 Transparency**: Every component is visible and understandable
-2. **📈 Progressive**: Start simple, add complexity gradually
-3. **🛠️ Hands-on**: Direct interaction with Flask concepts
-4. **🏗️ Professional**: Industry-standard patterns and practices
-5. **🚀 Practical**: Real-world application with modern AI integration
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📖 Next Steps
+## Support
 
-1. **Explore the structure** - Understand each directory's purpose
-2. **Read the TODOs** - Each file has clear implementation guidance
-3. **Start coding** - Begin with the app factory in `app/__init__.py`
-4. **Follow the learning path** - Build incrementally
-5. **Experiment** - Flask's flexibility encourages experimentation
-
-This structure provides the perfect foundation for learning LLM integration with Flask while following professional development practices! 🎯
-
----
-
-**Ready to start coding?** Run `make dev-setup` and begin your Flask + LLM learning journey! 🚀
+For issues and questions, please open an issue on GitHub: [github.com/affanfani/bitchatter](https://github.com/affanfani/bitchatter)
