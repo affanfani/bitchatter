@@ -1,0 +1,2671 @@
+{
+    "intents": [
+        {
+            "tag": "Greeting",
+            "patterns": [
+                "Hi",
+                "Hi there",
+                "Hello"
+            ],
+            "responses": [
+                "Hi there! How can I assist you with information about IBIT, Punjab University Lahore?"
+            ]
+        },
+        {
+            "tag": "NameQuery",
+            "patterns": [
+                "What is your name?",
+                "Tell me your name?"
+            ],
+            "responses": [
+                "Call me BIT chatter"
+            ]
+        },
+        {
+            "tag": "Thanks",
+            "patterns": [
+                "OK thank you",
+                "OK",
+                "Thank you"
+            ],
+            "responses": [
+                "You're welcome! If you have any more questions, feel free to ask."
+            ]
+        },
+        {
+            "tag": "Shutup",
+            "patterns": [
+                "Be quiet",
+                "Shut up",
+                "Stop talking"
+            ],
+            "responses": [
+                "Alright, I'll remain silent. PLease let me know if you want to know anything"
+            ]
+        },
+        {
+            "tag": "GoodBye",
+            "patterns": [
+                "Bye",
+                "Goodbye"
+            ],
+            "responses": [
+                "Goodbye! Have a great day. Come back soon"
+            ]
+        },
+        {
+            "tag": "postgraduate_programs",
+            "patterns": [
+                "Does IBIT offer any programs for postgraduate studies?",
+                "Can we pursue postgraduate studies at IBIT after graduation?",
+                "How to get addmission in MBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers postgraduate programs, including MBIT in Information Technology, MBIT in Marketing, MBIT in Finance. And the master programe only offeres MBIT via BBIT. IBIT held test and only 15 students are selected for MBIT programe."
+            ]
+        },
+        {
+            "tag": "program_duration",
+            "patterns": [
+                "What is the duration of the Bachelor of Business and Information Technology (BBIT) program at IBIT?",
+                "How long does it take to complete the BBIT program at IBIT?",
+                "What is the duration of undergraduate studies at IBIT?"
+            ],
+            "responses": [
+                "The duration of the Bachelor of Business and Information Technology (BBIT) program at IBIT is four(4) years."
+            ]
+        },
+        {
+            "tag": "teaching_methods_covid",
+            "patterns": [
+                "How has IBIT adapted its teaching methods in response to the COVID-19 pandemic?",
+                "What teaching methods did IBIT implement during the COVID-19 pandemic?"
+            ],
+            "responses": [
+                "IBIT has adapted its teaching methods in response to the COVID-19 pandemic by incorporating online and hybrid modes of instruction to ensure continuity of education."
+            ]
+        },
+        {
+            "patterns": [
+                "Does IBIT student have LMS portal?",
+                "Does IBIT provide LMS portal for students?",
+                "How do I check my attendance?"
+            ],
+            "responses": [
+                "IBIT provides LMS portal to its students form where the student can check its results, attendance, marks, etc. the student can gets its LMS credentials from MR. Shahid."
+            ],
+            "tag": "LMS_portal_attandance"
+        },
+        {
+            "patterns": [
+                "how student can check their results",
+                "when the result is announed of final exams?"
+            ],
+            "responses": [
+                "IBIT provides LMS portal to its students form where the student can check its results. The result of the final exam will be announced on the official website of IBIT after 10 days. "
+            ],
+            "tag": "results"
+        },
+        {
+            "tag": "international_students",
+            "patterns": [
+                "Can international students apply to IBIT?",
+                "Are international students eligible to study at IBIT?"
+            ],
+            "responses": [
+                "Yes, international students are welcome to apply to IBIT."
+            ]
+        },
+        {
+            "tag": "career_counseling_job_placement",
+            "patterns": [
+                "What type of career counseling and job placement services does IBIT offer to its graduates?",
+                "Does IBIT provide career counseling and job placement assistance to its graduates?"
+            ],
+            "responses": [
+                "IBIT offers career counseling and job placement services to its graduates, including assistance with resume writing, interview preparation, and job search strategies."
+            ]
+        },
+        {
+            "tag": "hackathons_coding_competitions",
+            "patterns": [
+                "Can IBIT students participate in hackathons and other coding competitions?",
+                "Does IBIT encourage students to participate in hackathons and coding competitions?"
+            ],
+            "responses": [
+                "Yes, IBIT students can participate in hackathons and other coding competitions. The institute regularly organizes and sponsors such events to foster student growth and development."
+            ]
+        },
+        {
+            "tag": "extracurricular_activities",
+            "patterns": [
+                "Does IBIT offer any extracurricular activities for students?",
+                "Are there any extracurricular activities available at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers a variety of extracurricular activities for students, including sport, festivals, annual events, trips and more."
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "What kind of facilities does IBIT offer for students?",
+                "Can you describe the facilities available at IBIT?"
+            ],
+            "responses": [
+                "IBIT offers state-of-the-art facilities for students, including modern classrooms, computer labs, a library, a cafeteria, and recreational facilities."
+            ]
+        },
+        {
+            "tag": "faculty_academic_background",
+            "patterns": [
+                "What is the academic background of the faculty at IBIT?",
+                "Do professors at IBIT have a strong academic background?"
+            ],
+            "responses": [
+                "The faculty at IBIT has a strong academic background, with many holding PhDs and other advanced degrees from reputable institutions around the world."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Does IBIT offer any scholarships for students?",
+                "What scholarships are available for students at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers a number of scholarships for eligible students, including the Punjab Educational Endowment Fund (PEEF) scholarship, the HEC need-based scholarship, and the IBIT merit scholarship."
+            ]
+        },
+        {
+            "tag": "campus_choice",
+            "patterns": [
+                "Is it possible to choose between campuses at IBIT?",
+                "Can students select their preferred campus location at IBIT?"
+            ],
+            "responses": [
+                "No, IBIT is only located at the Punjab university new Quaid-e-Azam campus, canal road Lahore"
+            ]
+        },
+        {
+            "tag": "field_scope",
+            "patterns": [
+                "Which specialization at IBIT has better career prospects?",
+                "Does one specialization have more career opportunities than others at IBIT?"
+            ],
+            "responses": [
+                "There is no such thing as “better scope” as each specialization at IBIT leads to different careers and offers unique opportunities. Whether it's IT, Marketing, or Finance, all specializations have their own merits and career pathways."
+            ]
+        },
+        {
+            "tag": "field_merits",
+            "patterns": [
+                "Which specialization at IBIT has higher admission merits?",
+                "Which specialization at IBIT attracts students with higher academic records?"
+            ],
+            "responses": [
+                "The general trend is that each specialization at IBIT has its own admission merits, with some programs attracting students with higher academic records compared to others."
+            ]
+        },
+        {
+            "tag": "bs_bbit_courses",
+            "patterns": [
+                "What type of courses are offered in the BBIT degree program at IBIT?",
+                "Can you list the subjects covered in the BBIT program at IBIT?"
+            ],
+            "responses": [
+                "The BBIT degree program at IBIT covers a range of courses including Information Technology, Marketing Management, Financial Management, Business Communication, and more."
+            ]
+        },
+        {
+            "tag": "bs_bbit_merit",
+            "patterns": [
+                "What was the merit of the BBIT program at IBIT last year?",
+                "What was the aggregate marks required for admission to the BBIT program at IBIT last year?"
+            ],
+            "responses": [
+                "The merit of the BBIT program at IBIT varies from year to year. It is advisable to check the latest admission criteria for the most accurate information."
+            ]
+        },
+        {
+            "tag": "department_location",
+            "patterns": [
+                "Is IBIT located only in Lahore?",
+                "Does IBIT have campuses outside of Lahore?"
+            ],
+            "responses": [
+                "Yes, IBIT is located only in Lahore, at punjab university new campus within the city."
+            ]
+        },
+        {
+            "tag": "acceptance_rate",
+            "patterns": [
+                "What is the acceptance rate of IBIT?",
+                "What percentage of students secure admission to IBIT?"
+            ],
+            "responses": [
+                "The acceptance rate of IBIT is subject to change and may vary from year to year. It is advisable to refer to the latest admission statistics for accurate information."
+            ]
+        },
+        
+        {
+            "tag": "admission_merit_criteria",
+            "patterns": [
+            "How is the admission merit determined at IBIT?",
+            "What is the admission criteria for IBIT?",
+            "How is the merit calculated for IBIT admissions?"
+            ],
+            "responses": [
+            "Admission merit at IBIT is determined based on the past academic record, evaluated by giving weighted percentage marks obtained in Matriculation and F.A./F.Sc. or equivalent examinations. The eligibility requirement is a minimum of 50% marks. The net merit is calculated using the formula: [75% Academic + 25% Entry Test]. Specifically, it is 25% of Marks Obtained in Matric + Marks Obtained in Inter + 20 Marks for Hafiz-e-Quran (if applicable), divided by 25% of Total Matric Marks + Total Intermediate Marks."
+            ]
+        },
+        {
+            "tag": "pre_medical_background",
+            "patterns": [
+                "Can a student with a pre-medical background apply for admission to IBIT's BBIT program?",
+                "Are students with a biology background eligible to apply for BBIT at IBIT?"
+            ],
+            "responses": [
+                "Yes, a student with a pre-medical background securing 50% marks in FSC can apply for admission to IBIT's BBIT program. They are also required to clear the HEC test 'USAT'."
+            ]
+        },
+        {
+            "tag": "fsc_marks_requirement",
+            "patterns": [
+                "How many marks are required in FSC for admission to IBIT's BBIT program?",
+                "What is the minimum FSC marks required for admission at IBIT?"
+            ],
+            "responses": [
+                "A minimum of 50% marks in FSC (Pre-Engineering, Pre-Medical, or ICS) and clearing the respective the HEC test 'USAT' are required for admission to IBIT's BBIT program."
+            ]
+        },
+        {
+            "patterns": [
+                "What is HEC?"
+            ],
+            "responses": [
+                "HEC stands Higher education commission. It is a government department that responsible for the controlling higher education in Pakistan."
+            ],
+            "tag": "hec"
+        },
+        {
+            "tag": "USAT",
+            "patterns": [
+                " what is USAT"
+            ],
+            "responses": [
+                "USAT is the undergraduate test introduced by HEC for admission in undergraduate in public intitute of Punjab. Punjab university also own USAT test with the weitage of 30% in the merit calculation for the admission in undergraduate."
+            ]
+        },
+        {
+            "tag": "department_location",
+            "patterns": [
+                "Where is the department of IBIT located?",
+                "How can I find the department of IBIT?"
+            ],
+            "responses": [
+                "The department of IBIT, is located at Jannat Road, new Quaid-e-Azam campus, Lahore."
+            ]
+        },
+        {
+            "tag": "department_location",
+            "patterns": [
+                "Where is the  department of IBIT located?",
+                "How can I locate the new department of IBIT?"
+            ],
+            "responses": [
+                "The new department of IBIT, is located at Jannat Road, new Quaid-e-Azam campus, Lahore."
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "Is there a library at IBIT?",
+                "Can students access course books or other books within the department?"
+            ],
+            "responses": [
+                "Yes, IBIT are equipped with libraries that provide access to updated course books and a variety of other books and novels."
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "How many computer labs does IBIT's deaprtment have?",
+                "Are there sufficient computer labs to accommodate students from all batches and degrees at IBIT?"
+            ],
+            "responses": [
+                "IBIT's department has approximately 2-3 computer labs, including general purpose labs, labs for Final Year Projects (FYP), and specialized labs for subjects like computer vision, Digital Logic Design (DLD), and networking."
+            ]
+        },
+        {
+            "tag": "starting_salary",
+            "patterns": [
+                "What is the starting salary of graduates from IBIT?",
+                "How much salary do fresh graduates from IBIT typically earn in the job market?"
+            ],
+            "responses": [
+                "The starting salary of graduates from IBIT is approximately 70,000-90,000 PKR."
+            ]
+        },
+        {
+            "tag": "IBIT_meaning",
+            "patterns": [
+                "What does IBIT stand for?",
+                "What is the full form of IBIT?",
+                "What does IBIT mean?",
+                "What is the abbreviation of IBIT?"
+            ],
+            "responses": [
+                "IBIT stands for Institute of Business and Information Technology."
+            ]
+        },
+        {
+            "tag": "university_ranking",
+            "patterns": [
+                "What is the QS ranking of punibab University?",
+                "Is punjab universitt ranked in the QS ranking?",
+                "Is pu ranked in the QS ranking?"
+            ],
+            "responses": [
+                "IBIT's QS ranking is within the range of 451-800."
+            ]
+        },
+        {
+            "tag": "societies",
+            "patterns": [
+                "How many societies does IBIT have?",
+                "What opportunities for extracurricular activities are available at IBIT?"
+            ],
+            "responses": [
+                "IBIT has a total of 8 different societies and clubs for students, including sports, BITs(business and information technology socity), and industrial linkage society, RTS (recreational and toure society), Envent management society, Litrary society 'Talash', Blood donor socitey, Girls League and have GDSC affilated with FCIT "
+            ]
+        },
+        {
+            "tag": "sports_socitey",
+            "patterns": [
+                "Does IBIT have a sports society?",
+                "What sports socity do?",
+                "when IBIT sports week starts",
+                "What sports are included in IBIT sports week"
+            ],
+            "responses": [
+                "IBIT sports socity organize soprts week in between february and march after the end of fall term which last for whole week from Monday to friday. the sports included are Cricket, Football, volleyball, table tennis, ludo, and chess, arm wrestling rowing and fun games. "
+            ]
+        },
+        {
+            "tag": "event_management_socirety",
+            "patterns": [
+                "what kind of event management society organize events?",
+                "who oragnize events in IBIT?"
+            ],
+            "responses": [
+                "IBIT has EMS which organize envents like bone fire in December, annual dinner in between Jan and Feb, Convocations after one year in Nov. and many more events"
+            ]
+        },
+        {
+            "tag": "Business_Information_technology_society",
+            "patterns": [
+                "what is BITs?",
+                "what BITs or business information technolgy society Do?",
+                "What kind of technolgyical events occur in IBIT"
+            ],
+            "responses": [
+                "IBIT has BITs business information techhnology society which organizes different seminars on new technology and give awerness about the new innovtion of technologies."
+            ]
+        },
+        {
+            "patterns": [
+                "Does ibit have blood donor society?",
+                "how Blood donor society works in IBIT?"
+            ],
+            "responses": [
+                "IBIT have blood donor society which organize blood donor camps in the start of every semester. In the camps big hospitals comes and students participate in donating the blood. In the end of every semester students get blood reports from the hospitals. "
+            ],
+            "tag": "Blood_donor_society"
+        },
+        {
+            "patterns": [
+                "Does IBIT have an industrial linkage society or ILS?",
+                "What is ILS industrial linkage society in IBIT?",
+                "does job fair organize in IBIT?",
+                "What is job fair in IBIT?"
+            ],
+            "responses": [
+                "IBIT has an industrial linkage society or ILS which organizes industrial linkage events and also organize job fair. The industrial linkages events include career day and industrial visits. The ILS also organize job fair in which more the 50 well reputed companies come and interview the IBIT students and recruiters also give job offers to talented students. "
+            ],
+            "tag": "industrial_linkage_society"
+        },
+        {
+            "patterns": [
+                "Does IBIT have a recreation and toure society?",
+                "how oraginze toures in IBIT?",
+                "Does IBIT offers toures and trips to study in IBIT?"
+            ],
+            "responses": [
+                "IBIT has RTS for the purpose of toure and recreation. The toure socity organize toures in between february and march after the end of fall term which last for whole week from Monday to friday. and also organize trips to study. "
+            ],
+            "tag": "RTS recreational and toure society"
+        },
+        {
+            "patterns": [
+                "How to register for a society",
+                "how to participate in society?",
+                "how to become a member of society?",
+                "how to become the member of societies?"
+            ],
+            "responses": [
+                "To become the member of IBIT societies, you must have a valid IBIT ID. you have to submit the societies admission form to student coodiantor in september to october. Then society incharge interview all the applicants. Then selected student list will be announced."
+            ],
+            "tag": "society_admission_registration"
+        },
+        {
+            "tag": "enrollment",
+            "patterns": [
+                "How many students are currently enrolled in IBIT?",
+                "How many individuals are currently studying at IBIT?"
+            ],
+            "responses": [
+                "As of the latest records, IBIT currently has an enrollment of 1000 to 1200 including BBIT and MBIT students."
+            ]
+        },
+        {
+            "tag": "department_choice",
+            "patterns": [
+                "Which one is batter PUCIT or IBIT",
+                "Which one is batter FCIT or IBIT"
+            ],
+            "responses": [
+                "It depends on your preferences and academic goals. Research both institutions' programs, faculty, facilities, reputation, alumni network, and location to make the best choice for you."
+            ]
+        },
+        {
+            "tag": "cs_vs_it",
+            "patterns": [
+                "What is the difference between Computer Science (CS) and Information Technology (IT)?",
+                "How do the roles of a computer scientist differ from those of an IT graduate?"
+            ],
+            "responses": [
+                "Computer scientists primarily focus on designing and developing software programs, while IT professionals are responsible for using and maintaining these programs. Relevant courses are offered at IBIT to prepare students for their respective roles in the industry."
+            ]
+        },
+        {
+            "tag": "undergraduate_programs",
+            "patterns": [
+                "What undergraduate programs does IBIT offer?",
+                "How many fields of study are available for undergraduate students at IBIT?"
+            ],
+            "responses": [
+                "IBIT offers undergraduate programs in Business and Information Technology, including the Bachelor of Business and Information Technology (BBIT) degree program."
+            ]
+        },
+        {
+            "tag": "department_degrees",
+            "patterns": [
+                "What degree programs are offered by IBIT?",
+                "How many disciplines does IBIT offer?"
+            ],
+            "responses": [
+                "IBIT primarily offers undergraduate and graduate programs in Business and Information Technology, including the Bachelor of Business and Information Technology (BBIT) degree program and Masters of Business and Information Technolgy. The masters is only offered to IBIT's students with having relevent specialization."
+            ]
+        },
+        {
+            "tag": "programs_offered",
+            "patterns": [
+                "What programs does IBIT offer?",
+                "Which degrees can students choose in their undergraduate studies at IBIT?"
+            ],
+            "responses": [
+                "IBIT primarily offers undergraduate and graduate programs in Business and Information Technology, including the Bachelor of Business and Information Technology (BBIT) degree program and Masters of Business and Information Technolgy. The masters is only offered to IBIT's students with having relevent specialization."
+            ]
+        },
+        {
+            "tag": "graduate_programs_process",
+            "patterns": [
+                "What is the process for applying to graduate programs at IBIT?"
+            ],
+            "responses": [
+                "The admission process for graduate programs at IBIT typically involves taking an entrance exam and meeting the minimum eligibility criteria. Specific requirements may vary depending on the program. It's recommended to visit the official IBIT website for the latest information on admission procedures."
+            ]
+        },
+        {
+            "tag": "admission_process",
+            "patterns": [
+                "What is the admission process for IBIT?",
+                "How can I get into IBIT?",
+                "What are the requirements for admission to IBIT?",
+                "What steps do I need to take to apply to IBIT?"
+            ],
+            "responses": [
+                "The admission process for IBIT typically involves taking an HEC entrance exam USAT and meeting the minimum eligibility criteria, such as passing intermediate and matric exams with a minimum score. For the most up-to-date information visit IBIT website."
+            ]
+        },
+        {
+            "tag": "department_description",
+            "patterns": [
+                "What is the department like at IBIT?",
+                "Describe the department environment at IBIT."
+            ],
+            "responses": [
+                "IBIT has a modern and well-equipped department, with a variety of facilities for students including lecture halls, computer labs, libraries, and sports facilities. The college is known for its supportive and inclusive environment, and students from diverse backgrounds are encouraged to pursue their studies at IBIT."
+            ]
+        },
+        {
+            "tag": "history",
+            "patterns": [
+                "What is the history of IBIT? Can you tell me about the founding and development of IBIT?",
+                "When was IBIT founded? How has it evolved over time?"
+            ],
+            "responses": [
+                "IBIT was established in 2002 as a college of the University of the Punjab. It was founded with the goal of providing high-quality education in the fields of business and information technology. Over the years, IBIT has grown into one of the leading institutions of its kind in Pakistan, with a strong reputation for its academic programs and its contributions to the fields of business and information technology."
+            ]
+        },
+        {
+            "tag": "faculty_description",
+            "patterns": [
+                "What is the faculty like at IBIT?",
+                "How good are the professors at IBIT?",
+                "What are the qualifications and experience of the faculty at IBIT?"
+            ],
+            "responses": [
+                "IBIT has a highly qualified and experienced faculty, consisting of experts in the fields of business and information technology. The faculty is committed to providing students with a top-notch education and is actively involved in cutting-edge research in these fields. In addition, IBIT provides opportunities for students to work with faculty members on research projects and other initiatives, helping to further their education and prepare them for careers in the field."
+            ]
+        },
+        {
+            "tag": "undergraduate_research_opportunities",
+            "patterns": [
+                "Can you provide information about research opportunities for undergraduate students?",
+                "What are some research opportunities for undergraduate students?"
+            ],
+            "responses": [
+                "The faculty and students at IBIT are involved in a wide range of research projects, covering a variety of topics in the fields of business and information technology. This may include areas such as business analytics, digital marketing, e-commerce, and more. IBIT is also home to a number of research centers and institutes, where students and faculty can collaborate and advance the field through their work."
+            ]
+        },
+        {
+            "tag": "research_areas",
+            "patterns": [
+                "What types of research are conducted at IBIT?",
+                "What are the research goals of IBIT?"
+            ],
+            "responses": [
+                "The faculty and students at IBIT are involved in a wide range of research projects, covering a variety of topics in the fields of business and information technology. This may include areas such as business analytics, digital marketing, e-commerce, and more. IBIT is also home to a number of research centers and institutes, where students and faculty can collaborate and advance the field through their work."
+            ]
+        },
+        {
+            "tag": "career_opportunities",
+            "patterns": [
+                "What career opportunities are available for IBIT graduates?",
+                "What are the career prospects for IBIT graduates?"
+            ],
+            "responses": [
+                "IBIT graduates are highly sought after by employers, and are well-prepared for careers in the fields of business and information technology. They may go on to work in industries such as software development, business analysis, digital marketing, and more. In addition, many IBIT graduates choose to pursue advanced degrees, such as a master's or PhD, to further their education and increase their career opportunities."
+            ]
+        },
+        {
+            "tag": "faculty_qualifications",
+            "patterns": [
+                "What qualifications do the teachers at IBIT have?",
+                "What are the educational and professional qualifications of the faculty at IBIT?"
+            ],
+            "responses": [
+                "The teachers at IBIT are highly qualified experts in the fields of business and information technology. Many of them hold advanced degrees, such as PhDs, and have extensive experience in their areas of expertise. They are dedicated to providing students with a top-notch education and are committed to staying up-to-date with the latest developments in their fields."
+            ]
+        },
+        {
+            "tag": "faculty_professional_development",
+            "patterns": [
+                "How does IBIT support its teachers in their professional development?",
+                "What does IBIT do to help its teachers stay up-to-date?"
+            ],
+            "responses": [
+                "IBIT provides its teachers with a supportive and inclusive environment that encourages professional growth and development. This may include opportunities for teachers to attend conferences, participate in research projects, and engage in professional development activities. In addition, IBIT provides resources and support to help its teachers stay up-to-date with the latest trends and best practices in teaching and research."
+            ]
+        },
+        {
+            "tag": "teaching_style",
+            "patterns": [
+                "What is the teaching style like at IBIT?",
+                "What are the teaching methods used at IBIT?",
+                "How do teachers at IBIT teach?",
+                "What is the learning environment like at IBIT?"
+            ],
+            "responses": [
+                "The teaching style at IBIT is student-centered and interactive, with a focus on hands-on learning and real-world applications. Teachers at IBIT use a variety of teaching methods, including lectures, discussions, hands-on projects, and case studies, to help students understand complex concepts and develop practical skills. The college is also known for its supportive and inclusive environment, where students from diverse backgrounds are encouraged to ask questions, participate in class, and engage with the material."
+            ]
+        },
+        {
+            "tag": "student_research_opportunities",
+            "patterns": [
+                "What opportunities are there for students to work with teachers on research projects at IBIT?",
+                "What are the ways students can collaborate with faculty on research at IBIT?"
+            ],
+            "responses": [
+                "IBIT provides students with many opportunities to work with teachers on research projects and other initiatives. This may include opportunities to assist with ongoing research projects, participate in independent studies, or pursue their own research interests. These experiences can help students gain valuable hands-on experience and make meaningful contributions to the field, while also providing a unique opportunity to work closely with their teachers and learn from them in a more personal setting."
+            ]
+        },
+        {
+            "tag": "admission_process",
+            "patterns": [
+                "What is the admission process like at IBIT?",
+                "How can we apply to IBIT?"
+            ],
+            "responses": [
+                "The admission process at IBIT typically involves submitting an application, along with relevant academic transcripts and test scores, and meeting the university's minimum admission requirements. Additional requirements, such as interviews or essays, may also be required for some programs."
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "What are the facilities like at IBIT?",
+                "What kind of facilities does IBIT have for students?"
+            ],
+            "responses": [
+                "IBIT provides students with a range of facilities and resources to support their academic and personal growth. This may include modern classrooms and labs, access to a library and other academic resources, and student services such as career services and counseling."
+            ]
+        },
+        {
+            "tag": "campus_life",
+            "patterns": [
+                "What is the campus life like at IBIT?",
+                "What is the campus culture like at IBIT?"
+            ],
+            "responses": [
+                "IBIT is known for its supportive and inclusive campus culture, where students from diverse backgrounds are encouraged to engage with each other and with the university community. There are many opportunities for students to get involved in departmental life, including student organizations, clubs, and events."
+            ]
+        },
+        {
+            "tag": "faculty_student_ratio",
+            "patterns": [
+                "What is the faculty to student ratio at IBIT?",
+                "How many faculty members and students are at IBIT?"
+            ],
+            "responses": [
+                "The faculty to student ratio at IBIT varies depending on the program and the specific course, but the university is committed to providing students with a supportive and engaging learning environment. There is a good balance between the number of faculty and students, ensuring that students receive individual attention and support from their instructors."
+            ]
+        },
+        {
+            "tag": "practical_experience",
+            "patterns": [
+                "What opportunities are there for students to gain practical experience at IBIT?",
+                "What are the ways students can gain hands-on experience at IBIT?"
+            ],
+            "responses": [
+                "IBIT provides students with many opportunities to gain practical experience through internships, co-operate programs, and other hands-on learning opportunities. These experiences allow students to apply what they have learned in the classroom to real-world situations and develop important skills and connections in their field."
+            ]
+        },
+        {
+            "tag": "cost_of_attending",
+            "patterns": [
+                "What is the cost of attending IBIT?",
+                "How much does it cost to attend IBIT?",
+                "Is attending IBIT affordable?"
+            ],
+            "responses": [
+                "The cost of attending IBIT depends on several factors, including the program of study, the length of enrollment, and the student's residency status. I suggest visiting the IBIT website or contacting the university directly for a more accurate estimate of the cost of attendance."
+            ]
+        },
+        {
+            "tag": "support_services",
+            "patterns": [
+                "What support services are available to students at IBIT?",
+                "What resources are available to students at IBIT?"
+            ],
+            "responses": [
+                "IBIT provides students with a range of support services to help them succeed in their academic and personal lives. This may include academic advising, tutoring, career services, counseling, and more. The university is committed to helping students succeed and provides a supportive and inclusive environment to help them reach their goals."
+            ]
+        },
+        {
+            "tag": "university_ranking",
+            "patterns": [
+                "How is Punjab university or pu ranked compared to other universities?",
+                "What is Punjab university or pu ranking in the world?"
+            ],
+            "responses": [
+                "Punjab Universiy is considered one of the top institutions in Pakistan for business and information technology education. It has a strong reputation for its programs and facilities, and is known for producing well-prepared and successful graduates. However, the specific ranking of PU can vary depending on the criteria and methodology used by different organizations and publications."
+            ]
+        },
+        {
+            "tag": "student_population",
+            "patterns": [
+                "What is the student population like at IBIT?",
+                "Are students at IBIT nice?"
+            ],
+            "responses": [
+                "The student population at IBIT is diverse and includes students from many different backgrounds and countries. There is a strong sense of community among students, who are encouraged to engage with each other and with the university community."
+            ]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "What is the location of IBIT like?",
+                "Where is IBIT located?"
+            ],
+            "responses": [
+                "IBIT is located in Lahore, Pakistan, a vibrant and dynamic city known for its rich cultural heritage, historical sites, and modern amenities. The university is situated in a convenient and accessible location, close to public transportation and many other resources."
+            ]
+        },
+        {
+            "tag": "career_opportunities",
+            "patterns": [
+                "What kind of career opportunities are available for graduates of IBIT?",
+                "What are the job prospects for graduates of IBIT?",
+                "Do IBIT graduates get jobs easily?"
+            ],
+            "responses": [
+                "IBIT graduates are well-prepared for a range of careers in business and information technology, including roles in management, consulting, data analysis, software development, and more. Many IBIT graduates go on to work for leading companies in the field, while others start their own businesses or pursue advanced degrees."
+            ]
+        },
+        {
+            "tag": "department_envirment",
+            "patterns": [
+                "What is the campus environment like at IBIT?",
+                "How does it feel to be at IBIT?"
+            ],
+            "responses": [
+                "The campus environment at IBIT is welcoming, inclusive, and supportive. There are many opportunities for students to get involved in campus life, including clubs, organizations, and events. The university also provides a range of resources and services to support students' academic and personal growth."
+            ]
+        },
+        {
+            "tag": "curriculum",
+            "patterns": [
+                "What is the curriculum like at IBIT?",
+                "What courses are offered at IBIT?",
+                "What is the structure of the academic program at IBIT?"
+            ],
+            "responses": [
+                "The curriculum at IBIT is designed to provide students with a comprehensive education in business and information technology. It covers a range of subjects, including management principles, business analytics, information systems, and more. The curriculum is regularly updated to reflect the latest developments in the field."
+            ]
+        },
+        {
+            "tag": "academic_calendar",
+            "patterns": [
+                "What is the academic calendar like at IBIT?",
+                "How is the year scheduled academically at IBIT?"
+            ],
+            "responses": [
+                "The academic calendar at IBIT typically consists of two semesters, with a summer session available for some programs. Classes are usually held from Monday to Friday, with exams and other assessments taking place throughout the semester."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Are scholarships available to students at IBIT?",
+                "What scholarship opportunities are available to students at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers a range of scholarships and financial aid options to help students finance their education. These may include merit-based scholarships, need-based grants, and loans. I suggest visiting the IBIT website or contacting the university directly for more information on the specific financial aid options available."
+            ]
+        },
+        {
+            "tag": "residence_policy",
+            "patterns": [
+                "What is the residence policy like at IBIT?",
+                "What are the rules and regulations for living in hostels at IBIT?"
+            ],
+            "responses": [
+                "The residence policy at IBIT varies depending on the student's program and other factors. Some students may choose to live on campus in university-owned or affiliated housing, while others may choose to live off campus. I suggest visiting the IBIT website or contacting the university directly for more information on the specific residence options available."
+            ]
+        },
+        {
+            "tag": "teaching_philosophy",
+            "patterns": [
+                "What is the teaching philosophy at IBIT?",
+                "What is the approach to teaching at IBIT?"
+            ],
+            "responses": [
+                "The teaching philosophy at IBIT is based on a commitment to providing students with a rigorous and engaging education. The university emphasizes hands-on learning, critical thinking, and problem-solving, and encourages students to take an active role in their education. The faculty is dedicated to helping students succeed and provides a supportive and inclusive learning environment."
+            ]
+        },
+        {
+            "tag": "workforce_preparation",
+            "patterns": [
+                "How does IBIT prepare students for the workforce?",
+                "Do IBIT students perform well in jobs?"
+            ],
+            "responses": [
+                "IBIT prepares students for the workforce through a combination of academic coursework, hands-on learning experiences, and career development resources. The university provides students with the skills and knowledge they need to succeed in their careers, and helps them connect with employers and build their professional networks."
+            ]
+        },
+        {
+            "tag": "dress_code_male",
+            "patterns": [
+                "What is IBIT dress code for male students?",
+                "Is there a dress code for male students at IBIT?"
+            ],
+            "responses": [
+                "The dress code for male students at IBIT includes the following guidelines:\n- Shorts of any kind must not be part of the attire.\n- Clothes should not be skin-tight.\n- Loose-neck shirts are prohibited.\n- Low-hung (hanging below waistline) pants are not allowed.\n- Sunglasses or caps must not be worn in classrooms.\n- Slippers are not allowed.\n- Shirts with pictures or text printed on front or back are not allowed. However, shirts with small logos or emblems are acceptable."
+            ]
+        },
+        {
+            "tag": "dress_code_female",
+            "patterns": [
+                "What is IBIT dress code for female students?",
+                "Is there a dress code for female students at IBIT?"
+            ],
+            "responses": [
+                "The dress code for female students at IBIT includes the following guidelines:\n- Dupatta must be part of the attire.\n- Shirts should not be over-fitted, or see-through.\n- Shirt length should be at least knee-length or longer.\n- Length of sleeves must be three-quarters or more.\n- Necklines must be non-revealing.\n- Fitted trousers, choori-dar pajamas, or tights must be accompanied by calf-length (half-way between knees and ankles) or longer length shirts without slits.\n- Trousers must be ankle-length or longer."
+            ]
+        },
+        {
+            "tag": "dress_code_penalty",
+            "patterns": [
+                "What is the penalty for dress code violation at IBIT?",
+                "What happens if someone does not follow the dress code policy at IBIT?"
+            ],
+            "responses": [
+                "For a first offense, the student will be given a verbal warning by the teacher. For a second offense, the student's card will be taken and sent to the discipline Committee (DC). DC will issue a strict warning letter signed and approved by the Director, which will be placed in the student's file. For a third offense, the case will be forwarded to DC, and the student will be suspended for one week from department rolls. The student will not be allowed to enter department premises and department fine them upto 5000"
+            ]
+        },
+        {
+            "tag": "email_services",
+            "patterns": [
+                "What are IBIT email services?",
+                "Does IBIT provide email services?"
+            ],
+            "responses": [
+                "Using this service, students and faculty members may communicate with one another. Student groups of different batches and programs are created for the ease of faculty and program coordinators for prompt message communication."
+            ]
+        },
+        {
+            "tag": "campus_management_services",
+            "patterns": [
+                "What are IBIT Campus Management Services?",
+                "Does IBIT provide Campus Management Services?"
+            ],
+            "responses": [
+                "Campus Management System (CMS) is an in-house developed system by IBIT. Using this system, students may obtain their semester-wise progress report, attendance rolls etc. Similarly, this portal is also very useful for faculty and degree coordinators as well as program coordinators for marking students’ attendance and exam-related seeding inputs."
+            ]
+        },
+        {
+            "tag": "IBIT_degree",
+            "patterns": [
+                "How many Degrees are there under IBIT?",
+                "How many Program are there in IBIT?"
+            ],
+            "responses": [
+                "There are Two Programes Offer IBIT: BBIT and MBIT"
+            ]
+        },
+        {
+            "tag": "admission_schedule",
+            "patterns": [
+                "When does IBIT offer admission to its BS, MS program?",
+                "When does IBIT admission program open?"
+            ],
+            "responses": [
+                "IBIT offers admission to all undergraduate and graduate programs for the Fall Semester only. Exact dates are announced through print and electronic media (newspaper, IBIT website, PU website, and social media)."
+            ]
+        },
+        {
+            "tag": "entrance_test",
+            "patterns": [
+                "Which entrance test is required for admission in IBIT?",
+                "Is any entrance test required for admission in IBIT?"
+            ],
+            "responses": [
+                "USAT by HEC is mandatory to apply for admission in BBIT of IBIT in undergraduate programs. Graduate admission test is held by the departments."
+            ]
+        },
+        {
+            "tag": "standardized_tests",
+            "patterns": [
+                "Does IBIT consider any other standardized tests for admission (NTS, SAT, etc.)?"
+            ],
+            "responses": [
+                "No, IBIT only accepts HEC test 'USAT'"
+            ]
+        },
+        {
+            "tag": "session_type",
+            "patterns": [
+                "Does IBIT offer admission to the afternoon or evening session?",
+                "Are there evening classes in IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers admission in afternoon/replica or evening program."
+            ]
+        },
+        {
+            "tag": "program_fees",
+            "patterns": [
+                "What are the fees for the undergraduate and graduate programs at IBIT?",
+                "What is IBIT fee structure?"
+            ],
+            "responses": [
+                "According to latest updates fee structure of Morning is round about 30,000 to 40,000. But for the correct data Please visit IBIT site. "
+            ]
+        },
+        {
+            "tag": "degree_recognition",
+            "patterns": [
+                "Are the degrees offered by the IBIT Department recognized and accredited by HEC, PEC, or NCEAC?"
+            ],
+            "responses": [
+                "We are under process of accreditation of our degree programs. However, BBIT degrees of the 2015 batch have already been accredited by NCEAC with the highest “W” Category."
+            ]
+        },
+        {
+            "tag": "hostel_facility",
+            "patterns": [
+                "Does IBIT provide hostel facility?",
+                "Is there provision for hostel accommodation at IBIT?"
+            ],
+            "responses": [
+                "University of the Punjab hostel facility is available for students of IBIT admitted to the morning/regular programs only."
+            ]
+        },
+        {
+            "tag": "transport_facility",
+            "patterns": [
+                "Does IBIT provide any transportation services to assist students?",
+                "Is there any transport facility provided by IBIT?"
+            ],
+            "responses": [
+                "Yes, University of the Punjab bus service is available for different routes in the city."
+            ]
+        },
+        {
+            "tag": "class_timings",
+            "patterns": [
+                "What are the timings for classes at IBIT?",
+                "What are the designated timings for classes at IBIT?"
+            ],
+            "responses": [
+                "Morning classes at IBIT typically start around 8:30 AM or 9:00 AM and may extend until 1:00 PM.And Afternoon or replica classes typically start around 11:30 or 01:15 However, timings can vary based on the program and semester schedule. For the most accurate information, please refer to the official IBIT website or contact to student coordinator Sir Faisal"
+            ]
+        },
+        {
+            "tag": "spring_admissions",
+            "patterns": [
+                "Does IBIT offer admissions for the Spring semester?",
+                "Does IBIT accept admissions for the Spring semester?"
+            ],
+            "responses": [
+                "No. IBIT only offers admission for the Fall semester, which starts from July."
+            ]
+        },
+        {
+            "tag": "undergraduate_class_location",
+            "patterns": [
+                "Where are classes of undergraduate (BS) programs held at IBIT?",
+                "In which location are the classes conducted for the undergraduate (BS) programs at IBIT?"
+            ],
+            "responses": [
+                "The classes for BBIT programs are held at IBIT department at Jannat road new Campus Quaid-e-Azam Lahore."
+            ]
+        },
+        {
+            "tag": "graduate_class_location",
+            "patterns": [
+                "Where are the classes of graduate programs held at IBIT?",
+                "What is the designated venue for the graduate program classes at IBIT?"
+            ],
+            "responses": [
+                "The classes for MBIT programs at IBIT are held at IBIT department at Jannat road new Campus Quaid-e-Azam Lahore."
+            ]
+        },
+        {
+            "tag": "PhD_teachers_count",
+            "patterns": [
+                "How many PhD teachers does IBIT have?",
+                "What is the total number of PhD-qualified faculty members at IBIT?"
+            ],
+            "responses": [
+                "IBIT currently has 15 PhD faculty members out of 30 faculty members (Both parmanent and visiting faculty), including Fulbright Scholars and Erasmus Mundus Scholars."
+            ]
+        },
+        {
+            "tag": "PhD_teachers_research_areas",
+            "patterns": [
+                "What are the areas of research of the PhD teachers at IBIT?",
+                "What are the specific research domains pursued by the PhD faculty members at IBIT?"
+            ],
+            "responses": [
+                "The PhD teachers at IBIT are currently pursuing research in the following areas: AI, Machine Learning, Deep Learning, Computer Vision, Generative AI and Cloud Computing."
+            ]
+        },
+        {
+            "tag": "available_seats",
+            "patterns": [
+                "How many seats are available at IBIT?",
+                "How many available slots or seats are there for admission at IBIT?"
+            ],
+            "responses": [
+                "Following are the number of seats: BBIT morning/regular students have 80 seats which divided into two sections. For BBIT afternoon/replica students have 90 seats which is divided into similar two sections. "
+            ]
+        },
+        {
+            "tag": "undergraduate_merit_seats",
+            "patterns": [
+                "How many merit-based seats does IBIT have for each of its undergraduate (BS) programs?",
+                "What is the allocation of merit-based seats for each undergraduate (BS) program at IBIT?"
+            ],
+            "responses": [
+                "Following are the number of seats: BBIT morning/regular students have 80 seats which divided into two sections. For BBIT afternoon/replica students have 90 seats which is divided into similar two sections. All these seats are merit base."
+            ]
+        },
+        {
+            "tag": "graduate_merit_seats",
+            "patterns": [
+                "How many merit-based seats does IBIT have for each of its master programs?",
+                "How many merit-based seats are available for master program  at IBIT?"
+            ],
+            "responses": [
+                "Following are the number of seats: MBIT for IT, Marketing and Finance have 15 seats in each specilization."
+            ]
+        },
+        {
+            "tag": "equivalence_certificate",
+            "patterns": [
+                "Is Equivalence Certificate required to submit if the candidate whose name appears in the merit list has its terminal degree from any University other than Punjab University?",
+                "Is it mandatory to submit an Equivalence Certificate for candidates who have obtained their terminal degree from a university other than Punjab University but are listed in the merit list?"
+            ],
+            "responses": [
+                "Equivalence Certificate is a must document to submit if the candidate is offered admission in MBIT. Moreover MBIT program is only offered to IBIT students with graduate in respective Seciliztion."
+            ]
+        },
+        {
+            "tag": "director_ faculty",
+            "patterns": [
+                "Who is Dean Faculty of Business and Information Technology?",
+                "Who currently holds the position of Dean at the Faculty of Business and Information Technology?",
+                "Who is the director of IBIT?"
+            ],
+            "responses": [
+                "Assistant Professor Saleem Raza "
+            ]
+        },
+        {
+            "tag": "disability_resources",
+            "patterns": [
+                "What resources are available for students with disabilities?",
+                "What support and resources are provided for students with disabilities at IBIT?"
+            ],
+            "responses": [
+                "There are special seats reserved for students with disabilities, and teachers provide specific attention to them."
+            ]
+        },
+        {
+            "tag": "establishment_date",
+            "patterns": [
+                "When IBIT was established?",
+                "When was the establishment of IBIT?"
+            ],
+            "responses": [
+                "IBIT was established in 2002 as a Institute of Business and Information Technology."
+            ]
+        },
+        {
+            "tag": "special_seats_disabled_disable_students",
+            "patterns": [
+                "Are there special seats for disabled students at IBIT?",
+                "Are there designated seats or accommodations for students with disabilities at IBIT?"
+            ],
+            "responses": [
+                "Yes, there are special seats available."
+            ]
+        },
+        {
+            "tag": "ds_vs_it",
+            "patterns": [
+                "Difference between DS and IT?",
+                "DS vs IT",
+                "Is there any difference between DS and IT?",
+                "How does Data Science (DS) differ from Information Technology (IT)?"
+            ],
+            "responses": [
+                "DS is centered around data analysis and extracting insights, while IT is focused on managing and implementing technology infrastructure and applications. DS professionals work with data, while IT professionals handle the technology infrastructure and systems that support data processing and utilization."
+            ]
+        },
+        {
+            "tag": "cs_vs_it",
+            "patterns": [
+                "Difference between CS and IT?",
+                "CS vs IT",
+                "Is there any difference between CS and IT?",
+                "How does Computer Science differ from Information Technology (IT)?"
+            ],
+            "responses": [
+                "CS provides the theoretical foundations and tools necessary for computing, algorithms, and data structures. while IT professionals handle the technology infrastructure and systems that support data processing and utilization."
+            ]
+        },
+        {
+            "tag": "it_vs_se",
+            "patterns": [
+                "Difference between IT and SE?",
+                "IT vs SE",
+                "Is there any difference between DS and IT?",
+                "What are the distinctions between Information Technology (IT) and Software Engineering (SE)?"
+            ],
+            "responses": [
+                "Information Technology (IT) focuses on the management and implementation of technology infrastructure, systems, and applications. Software Engineering (SE) focuses on the design, development, and maintenance of software systems. IT focuses on technology management, while SE focuses on software development."
+            ]
+        },
+        {
+            "tag": "admission_criteria",
+            "patterns": [
+                "What is the admission criteria for IBIT?",
+                "What are the requirements for admission at IBIT?"
+            ],
+            "responses": [
+                "The admission criteria for IBIT typically include completion of intermediate or equivalent education, performance in an entrance test, and merit calculation based on test scores and academic qualifications. For specific and up-to-date information, it's best to refer to the official IBIT website or contact their admissions office."
+            ]
+        },
+        {
+            "tag": "fsc_marks_required",
+            "patterns": [
+                "How many marks are required in FSc for admission at IBIT?",
+                "What is the minimum score in FSc required for admission at IBIT?"
+            ],
+            "responses": [
+                "The specific marks requirement in FSc (or equivalent) for admission at IBIT can vary from year to year and depend on the program you are applying to. It's best to check the official IBIT website or contact their admissions office for the most accurate and up-to-date information regarding the minimum marks required for admission."
+            ]
+        },
+        {
+            "tag": "matric_marks_required",
+            "patterns": [
+                "How many marks are required in Matriculation for admission at IBIT?",
+                "What is the minimum score in Matriculation required for admission at IBIT?"
+            ],
+            "responses": [
+                "The specific marks requirement in Matriculation (or equivalent) for admission at IBIT can vary from year to year and depend on the program you are applying to. It's best to check the official IBIT website or contact their admissions office for the most accurate and up-to-date information regarding the minimum marks required for admission."
+            ]
+        },
+        {
+            "tag": "entry_test_marks_required",
+            "patterns": [
+                "How many marks are required in the Entry Test for admission at IBIT?",
+                "What is the minimum score in the Entry Test required for admission at IBIT?"
+            ],
+            "responses": [
+                "The specific marks requirement in the Entry Test for admission at IBIT can vary from year to year and depend on the program you are applying to. It's best to check the official IBIT website or contact their admissions office for the most accurate and up-to-date information regarding the minimum marks required for admission."
+            ]
+        },
+        {
+            "tag": "marks_deduction_repeaters",
+            "patterns": [
+                "Is there any deduction of marks for repeaters in IBIT?",
+                "Are there any marks deducted for repeaters during the admission process at IBIT?"
+            ],
+            "responses": [
+                "Two percen tmarks will be deducted from (percent academic) marks obtained out of 100 marks for each late year to a maximum of five (5) years."
+            ]
+        },
+        {
+            "tag": "hafiz_e_quran_bonus_marks",
+            "patterns": [
+                "Do hafiz e Quran get bonus marks at IBIT?",
+                "Do Hafiz-e-Quran receive bonus marks at IBIT?",
+                "Do Hafiz-e-Quran students receive bonus marks during the admission process at IBIT?"
+            ],
+            "responses": [
+                "Hafiz e Quran gets 20 extra marks on admission after verification."
+            ]
+        },
+        {
+            "tag": "scholarships_financial_aid",
+            "patterns": [
+                "Can you provide information about scholarships and financial aid at IBIT?",
+                "Can you provide information about scholarships and financial assistance at IBIT?"
+            ],
+            "responses": [
+                "IBIT offers merit-based scholarships and need-based financial aid to deserving students. Students can apply for scholarships based on their academic achievements and financial circumstances. Additionally, external scholarships may also be available. For specific and up-to-date information, it's best to refer to the official IBIT website or contact their scholarships/financial aid office."
+            ]
+        },
+        {
+            "tag": "class_timings_IBIT",
+            "patterns": [
+                "What are the timings for classes at IBIT?",
+                "What are the class timings at IBIT?",
+                "What are morning class timings for IBIT students?"
+            ],
+            "responses": [
+                "Morning classes at IBIT typically start around 8:30 AM and may extend until 1:00 PM or 1:30 PM. And Afternoon/replica classes start from 11:30 or 01:15. However, timings can vary based on the program and semester schedule. For the most accurate information, please refer to the official IBIT website or contact the relevant department."
+            ]
+        },
+        {
+            "tag": "market_scope_IBIT",
+            "patterns": [
+                "What is the scope of IBIT graduates in the market?",
+                "What is the market scope of IBIT graduates?"
+            ],
+            "responses": [
+                "Great scope for IBIT graduates. Many prominent software houses employ graduates from IBIT."
+            ]
+        },
+        {
+            "tag": "job_rate_IBIT_students",
+            "patterns": [
+                "What is the job rate of an IBIT student?",
+                "What is the employment rate for IBIT students?"
+            ],
+            "responses": [
+                "Almost 95% of IBIT graduates secure employment."
+            ]
+        },
+        {
+            "tag": "laptop_scheme_IBIT",
+            "patterns": [
+                "Is there any laptop scheme for IBIT students?",
+                "Are there any laptop schemes available for students at IBIT?"
+            ],
+            "responses": [
+                "There is no laptop scheme for students at IBIT."
+            ]
+        },
+        {
+            "tag": "transferring_to_IBIT",
+            "patterns": [
+                "Can we transfer to IBIT after 4 semesters in other universities?",
+                "Is there any ADP program in IBIT?"
+            ],
+            "responses": [
+                "IBIT follows the transfer policy of the University of Punjab. You can see the details on its website."
+            ]
+        },
+        {
+            "tag": "earning_opportunities_IBIT",
+            "patterns": [
+                "What are the ways to earn as a student from IBIT?",
+                "What opportunities exist for IBIT students to earn income?"
+            ],
+            "responses": [
+                "You can always form a community to start projects as a freelancer or become a TA for specific subjects. Additionally, you can apply for need-based scholarships from the university."
+            ]
+        },
+        {
+            "tag": "teacher_assistant_IBIT",
+            "patterns": [
+                "Can students work as a teacher'assistant in IBIT?",
+                "Is it possible for students to work as teaching assistants at IBIT?"
+            ],
+            "responses": [
+                "Yes, TA ship is available in the department. You can always contact a faculty member to work with them."
+            ]
+        },
+        {
+            "tag": "TA_payment_IBIT",
+            "patterns": [
+                "How much do TAs make in IBIT?",
+                "How much do teaching assistants make at IBIT?"
+            ],
+            "responses": [
+                "As per the current policy, teaching assistants in IBIT receive 8000 rupees."
+            ]
+        },
+        {
+            "tag": "marking_policy_IBIT",
+            "patterns": [
+                "What marking policy does IBIT follow?",
+                "How does IBIT determine student grades?"
+            ],
+            "responses": [
+                "IBIT follows an absolute marking system."
+            ]
+        },
+        {
+            "tag": "IBIT_meaning",
+            "patterns": [
+                "What does IBIT stand for?",
+                "What is the full form of IBIT?"
+            ],
+            "responses": [
+                "IBIT stands for Institute of Business and Information Technology."
+            ]
+        },
+        {
+            "tag": "IBIT_establishment_date",
+            "patterns": [
+                "When was IBIT established?",
+                "In which year was IBIT established?"
+            ],
+            "responses": [
+                "IBIT was established in the year 2002."
+            ]
+        },
+        {
+            "tag": "IBIT_location",
+            "patterns": [
+                "Where is IBIT located?",
+                "Where can IBIT be found geographically?"
+            ],
+            "responses": [
+                "IBIT is located in Lahore, Punjab, Pakistan."
+            ]
+        },
+        {
+            "tag": "IBIT_programs",
+            "patterns": [
+                "What programs does IBIT offer?",
+                "Can you provide information about the different programs offered at IBIT?"
+            ],
+            "responses": [
+                "IBIT offers undergraduate and postgraduate programs in business and information technology."
+            ]
+        },
+        {
+            "tag": "IBIT_affiliation",
+            "patterns": [
+                "Is IBIT affiliated with any university?",
+                "Is IBIT affiliated with any university or institution?",
+                "Is IBIT recognized by HEC"
+            ],
+            "responses": [
+                "Yes, IBIT is affiliated with the University of the Punjab. And The university the Punjab recognized by HEC."
+            ]
+        },
+        {
+            "tag": "IBIT_admission_process",
+            "patterns": [
+                "What is the admission process for IBIT?",
+                "What is the process for admission to IBIT?"
+            ],
+            "responses": [
+                "The admission process for IBIT includes a written test which tests mathematical concepts and analytical aptitude."
+            ]
+        },
+        {
+            "tag": "IBIT_eligibility_criteria",
+            "patterns": [
+                "What are the eligibility criteria for admission to IBIT?",
+                "What are the requirements for admission to IBIT?"
+            ],
+            "responses": [
+                "To be eligible for the BBIT (4 years) Program a candidate must have: Intermediate or Equivalent qualification from a recognized Board or University."
+            ]
+        },
+        {
+            "tag": "IBIT_scholarships",
+            "patterns": [
+                "Does IBIT offer scholarships?",
+                "Are there any scholarship opportunities at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers various scholarships based on academic performance and financial need."
+            ]
+        },
+        {
+            "tag": "IBIT_facilities",
+            "patterns": [
+                "What facilities are available at IBIT?",
+                "What facilities are accessible at IBIT?"
+            ],
+            "responses": [
+                "IBIT provides state-of-the-art computer labs, a well-equipped library, auditoriums, sports facilities, and a cafeteria."
+            ]
+        },
+        {
+            "tag": "IBIT_research_opportunities",
+            "patterns": [
+                "Are there any research opportunities at IBIT?",
+                "Does IBIT offer research opportunities?"
+            ],
+            "responses": [
+                "Yes, IBIT promotes research activities and offers opportunities for students and faculty to engage in research projects."
+            ]
+        },
+        {
+            "tag": "IBIT_career_prospects",
+            "patterns": [
+                "What are the career prospects for IBIT graduates?",
+                "What career prospects await IBIT graduates?"
+            ],
+            "responses": [
+                "IBIT graduates have excellent career prospects in business administration, IT industry, research organizations, and academia."
+            ]
+        },
+        {
+            "tag": "IBIT_industry_collaborations",
+            "patterns": [
+                "Does IBIT have collaborations with industry?",
+                "Are there industry collaborations at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT has collaborations with various industries, allowing students to gain practical exposure and internships."
+            ]
+        },
+        {
+            "tag": "IBIT_student_organizations",
+            "patterns": [
+                "Are there any student organizations at IBIT?",
+                "What student organizations are present at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT has student-run societies and clubs that organize various co-curricular activities and events."
+            ]
+        },
+        {
+            "tag": "IBIT_placement_cell",
+            "patterns": [
+                "Does IBIT have a placement cell?",
+                "Does IBIT assist with job placements?"
+            ],
+            "responses": [
+                "Yes, IBIT has a dedicated placement cell that assists students in finding internships and job opportunities."
+            ]
+        },
+        {
+            "tag": "IBIT_distance_learning",
+            "patterns": [
+                "Does IBIT offer distance learning programs?",
+                "Are there distance learning programs offered by IBIT?"
+            ],
+            "responses": [
+                "No, IBIT primarily focuses on on-campus programs and does not offer distance learning at the moment."
+            ]
+        },
+        {
+            "tag": "IBIT_international_students",
+            "patterns": [
+                "Can international students apply to IBIT?",
+                "Is IBIT open for international student applications?"
+            ],
+            "responses": [
+                "Yes, international students are welcome to apply to IBIT. They need to follow the admission process and meet the eligibility criteria."
+            ]
+        },
+        {
+            "tag": "IBIT_extracurricular_activities",
+            "patterns": [
+                "Are there any extracurricular activities at IBIT?",
+                "What extracurricular activities are available for IBIT students?"
+            ],
+            "responses": [
+                "Yes, IBIT encourages students to participate in extracurricular activities such as sports, debates, and cultural events."
+            ]
+        },
+        {
+            "tag": "IBIT_research_center",
+            "patterns": [
+                "Does IBIT have a dedicated research center?",
+                "Does IBIT have a specialized research center?"
+            ],
+            "responses": [
+                "Yes, IBIT has a research center that promotes research and innovation in the field of business and information technology."
+            ]
+        },
+        {
+            "tag": "IBIT_library_resources",
+            "patterns": [
+                "What are the library resources available at IBIT?",
+                "What resources does the IBIT library offer?"
+            ],
+            "responses": [
+                "The IBIT library provides access to a wide range of books, research papers, online databases, and journals."
+            ]
+        },
+        {
+            "tag": "IBIT_hostel_facility",
+            "patterns": [
+                "Does IBIT have a hostel facility?",
+                "Does IBIT provide hostel accommodation for its students?"
+            ],
+            "responses": [
+                "Yes, IBIT has separate hostels for male and female students with all necessary amenities."
+            ]
+        },
+        {
+            "tag": "IBIT_international_collaborations",
+            "patterns": [
+                "Are there any collaborations or exchange programs with international universities?"
+            ],
+            "responses": [
+                "Yes, IBIT has collaborations and exchange programs with reputed international universities, providing students with global exposure."
+            ]
+        },
+        {
+            "tag": "IBIT_undergraduate_duration",
+            "patterns": [
+                "What is the duration of undergraduate programs at IBIT?"
+            ],
+            "responses": [
+                "The duration of undergraduate programs at IBIT is typically four years."
+            ]
+        },
+        {
+            "tag": "IBIT_research_based_postgraduate_programs",
+            "patterns": [
+                "Can students pursue research-based postgraduate programs at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT offers research-based postgraduate programs, including MBIT degrees, for students interested in advanced studies."
+            ]
+        },
+        {
+            "tag": "IBIT_student_support_services",
+            "patterns": [
+                "Are there any student support services at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT provides various student support services, including counseling, academic advising, and career guidance."
+            ]
+        },
+        {
+            "tag": "IBIT_alumni_network",
+            "patterns": [
+                "Does IBIT have a strong alumni network?"
+            ],
+            "responses": [
+                "Yes, IBIT has a strong alumni network that offers mentorship, networking opportunities, and industry connections to current students."
+            ]
+        },
+        {
+            "tag": "IBIT_industry_events",
+            "patterns": [
+                "Does IBIT organize any industry-focused events or conferences?"
+            ],
+            "responses": [
+                "Yes, IBIT organizes industry-focused events, conferences, and seminars to bridge the gap between academia and industry."
+            ]
+        },
+        {
+            "tag": "IBIT_unique_features",
+            "patterns": [
+                "What distinguishes IBIT from other institutions offering IT education?"
+            ],
+            "responses": [
+                "IBIT is known for its prestigious affiliation with the University of the Punjab, excellent faculty, cutting-edge curriculum, and strong industry linkages, making it a top choice for business and IT education."
+            ]
+        },
+        {
+            "tag": "IBIT_hostel_accommodation",
+            "patterns": [
+                "How can students apply for hostel accommodation at IBIT?",
+                "How IBIT student get hostel?",
+                "what is the process of getting hostel"
+            ],
+            "responses": [
+                "THe student who admitted to morning/rgular classes have submit the hostel request form to incharge Mr. Akram. Then the merit list will be announced of selected students. The selected students get hostel form along with the necessary documents and pay the required fees."
+            ]
+        },
+        {
+            "tag": "IBIT_hostel_rules_regulations",
+            "patterns": [
+                "What are the rules and regulations for students residing in the IBIT hostels?"
+            ],
+            "responses": [
+                "IBIT has specific rules and regulations that govern student behavior and conduct in the hostels. These guidelines are designed to ensure a safe and conducive living environment. Students are expected to abide by these rules, which cover areas such as curfew timings, visitor policies, cleanliness, and respect for fellow residents."
+            ]
+        },
+        {
+            "tag": "IBIT_housing_options",
+            "patterns": [
+                "Can you provide information about the housing options for IBIT students?"
+            ],
+            "responses": [
+                "IBIT does not typically provide on-campus housing facilities. However, since IBIT is located in major cities, there are various housing options available nearby. These may include private hostels, apartments, or shared accommodation. It is advisable to consult with current students or explore local housing resources for more information."
+            ]
+        },
+        {
+            "tag": "IBIT_official_transcript",
+            "patterns": [
+                "What is the process for obtaining an official transcript from IBIT?"
+            ],
+            "responses": [
+                "To obtain an official transcript from IBIT, you typically need to submit a transcript request form to the administration office. The form may require your personal details, program details, and any specific instructions for transcript delivery. There might be a fee associated with obtaining the official transcript."
+            ]
+        },
+        {
+            "tag": "IBIT_career_services",
+            "patterns": [
+                "What career services are offered to IBIT graduates?"
+            ],
+            "responses": [
+                "IBIT provides career counseling and job placement services to its graduates, including assistance with resume writing, interview preparation, and job search strategies."
+            ]
+        },
+        {
+            "tag": "transfer_to_IBIT",
+            "patterns": [
+                "Can we transfer to IBIT after completing 4 semesters at another university?"
+            ],
+            "responses": [
+                "IBIT follows the policy of University of Punjab; you can see the details from its website. https://www.pu.edu.pk/"
+            ]
+        },
+        {
+            "tag": "IBIT_earning_income",
+            "patterns": [
+                "What are the ways for IBIT students to earn income?",
+                "How can IBIT students generate income?"
+            ],
+            "responses": [
+                "IBIT students can earn income by participating in freelance projects, becoming teaching assistants, or applying for need-based scholarships from the university."
+            ]
+        },
+        {
+            "tag": "IBIT_contact_information",
+            "patterns": [
+                "How can I contact the administration or the academic advisors at IBIT?"
+            ],
+            "responses": [
+                "You can contact the administration or academic advisors at IBIT through their official contact channels. These may include email addresses, phone numbers, or in-person visits to the administration office. The specific contact information can be found on the IBIT website or by reaching out to the university's main reception."
+            ]
+        },
+        {
+            "tag": "IBIT_course_registration",
+            "patterns": [
+                "What is the procedure for course registration at IBIT?",
+                "What are the steps involved in the course registration process at IBIT?",
+                "How I can add subject in the semester"
+            ],
+            "responses": [
+                "The procedure for course registration at IBIT usually involves in the following steps. \n Get Add drop form from the book shop of the department or download form the website. \n Fill the form with the required docs. \n Pay the fees of the subject. \n It is important to follow the registration deadlines and seek guidance from academic advisors if needed."
+            ]
+        },
+        {
+            "tag": "part-time_jobs_IBIT",
+            "patterns": [
+                "Can students pursue part-time jobs while studying at IBIT?",
+                "Is it possible for students to work part-time while attending IBIT?"
+            ],
+            "responses": [
+                "Yes, students at IBIT can pursue part-time jobs or internships alongside their studies. However, it is important to maintain a balance between work and academics to ensure academic success. Students can explore job opportunities within the university, as well as external part-time job listings or internships relevant to their field of study."
+            ]
+        },
+        {
+            "tag": "IBIT_virtual_classes",
+            "patterns": [
+                "Does IBIT offer virtual classes?",
+                "Are virtual classes available at IBIT?"
+            ],
+            "responses": [
+                "Yes, IBIT does offer virtual classes. In response to the COVID-19 pandemic or other circumstances that may require remote learning, IBIT has implemented virtual class options to ensure continuity of education."
+            ]
+        },
+        {
+            "tag": "IBIT_virtual_attendance",
+            "patterns": [
+                "Do IBIT students have the option to attend classes virtually?",
+                "Do IBIT students have the opportunity to attend classes remotely or virtually?"
+            ],
+            "responses": [
+                "No, IBIT students do not have the option to attend classes virtually."
+            ]
+        },
+        {
+            "tag": "IBIT_diploma_programs",
+            "patterns": [
+                "What are the diploma programs offered at IBIT?",
+                "What diploma programs are available at IBIT?"
+            ],
+            "responses": [
+                "Please contact IBIT directly to obtain information about the specific diploma programs they offer, as availability may vary."
+            ]
+        },
+        {
+            "tag": "IBIT_diploma_recognition",
+            "patterns": [
+                "Are the diploma programs at IBIT recognized?",
+                "Do the diploma programs offered at IBIT hold official recognition?"
+            ],
+            "responses": [
+                "To determine the recognition or accreditation status of diploma programs at IBIT, it is best to contact the institution directly or refer to their official website for information. https://www.ibitpu.edu.pk/"
+            ]
+        },
+        {
+            "tag": "IBIT_faculty_to_student_ratio",
+            "patterns": [
+                "What is the faculty-to-student ratio at IBIT?",
+                "What is the ratio of faculty members to students at IBIT?"
+            ],
+            "responses": [
+                "The faculty-to-student ratio at IBIT refers to the number of faculty members compared to the number of students enrolled at the institution. The specific faculty-to-student ratio at IBIT may vary, and it is best to contact IBIT directly for the most accurate information regarding their current faculty-to-student ratio."
+            ]
+        },
+        {
+            "tag": "IBIT_alumni_careers",
+            "patterns": [
+                "What are the alumni of IBIT doing now?",
+                "What are the current occupations of IBIT alumni?"
+            ],
+            "responses": [
+                "Most alumni of IBIT are successfully employed in various industries, including IT, business, and academia, both locally and internationally. Some have ventured into entrepreneurship, starting their own businesses."
+            ]
+        },
+        {
+            "tag": "IBIT_strengths",
+            "patterns": [
+                "What are the strengths of IBIT?",
+                "Is IBIT a good University?"
+            ],
+            "responses": [
+                "IBIT is known for its strong emphasis on technology and business education, experienced faculty, and robust industry connections that facilitate practical learning and career opportunities for its students."
+            ]
+        },
+        {
+            "tag": "IBIT_website",
+            "patterns": [
+                "What is IBIT's official website?",
+                "Is there an official website of IBIT?"
+            ],
+            "responses": [
+                "The official website of Institute of Business & Information Technology (IBIT) is https://www.ibitpu.edu.pk/."
+            ]
+        },
+        {
+            "tag": "IBIT_transportation_options",
+            "patterns": [
+                "What are the transportation options to IBIT?",
+                "How to travel to IBIT?"
+            ],
+            "responses": [
+                "To reach IBIT, there are multiple transportation options including university shuttle services, public transit, and private transport depending on your location."
+            ]
+        },
+        {
+            "tag": "IBIT_nearby_attractions",
+            "patterns": [
+                "What are the nearby attractions?",
+                "Where can students of IBIT visit?"
+            ],
+            "responses": [
+                "Students at IBIT can explore nearby attractions such as cultural sites, shopping malls, parks, and local eateries, enriching their social and cultural experiences."
+            ]
+        },
+        {
+            "tag": "famous_teachers_IBIT",
+            "patterns": [
+                "Who are some famous teachers of IBIT Department?",
+                "Name some teachers of IBIT Department?"
+            ],
+            "responses": [
+                "Some of the renowned teachers in the IBIT Department include Director Mr. Saleem Raza, Assistent Professor Mansoor Ashiq, Dr. Asim Tanveer, and Mr. Hamza Ali Qureshi."
+            ]
+        },
+        {
+            "tag": "famous_teachers_IBIT",
+            "patterns": [
+                "Who are some famous teachers of IBIT Department for Finance specialization?",
+                "Name some teachers of BBIT Finance specialization ?"
+            ],
+            "responses": [
+                "Some of the renowned teachers in the IBIT Department for Finance specialization include Dr. Hira Aftab, Mr. Hamza Ali Qureshi,Mr. Kashif Gulzar."
+            ]
+        },
+        {
+            "tag": "famous_teachers_IT_IBIT",
+            "patterns": [
+                "Who are some famous teachers of IBIT for IT specialization?",
+                "Name some teachers of BBIT IT specialization?"
+            ],
+            "responses": [
+                "Some of the renowned teachers in the IBIT IT Department include Assistent Prof. Saleem Raza, Mr. Yasin Nasir, Dr. Asim Tanvir, Dr. Shahid Freed, Dr. Hassan Khan"
+            ]
+        },
+        {
+            "tag": "famous_teachers_IBIT",
+            "patterns": [
+                "Who are some famous teachers of IBIT for Marketing specialization?",
+                "Name some teachers of BBIT Marketing specialization?"
+            ],
+            "responses": [
+                "Some of the renowned teachers in the IBIT DS Department include Assistent Prof. Mansoor Ashiq, Dr. Amin Arif, Dr. Urooj Qamer,Dr. Asim Tanvir."
+            ]
+        },
+        {
+            "tag": "starting_fyp_IBIT",
+            "patterns": [
+                "When can we start working on our fyp?",
+                "In which semester can we start our fyp?"
+            ],
+            "responses": [
+                "You can start generating ideas and planning for your FYP from any semester, but officially, you begin working on and submitting it in the 8th semesters."
+            ]
+        },
+        {
+            "tag": "fyp_group_size_IBIT",
+            "patterns": [
+                "How many students can work in an FYP group?",
+                "What should be the number of students in our FYP group?"
+            ],
+            "responses": [
+                "The number of students working in a final year project group can range from 3 to 4 individuals."
+            ]
+        },
+        {
+            "tag": "fyp_with_professor_IBIT",
+            "patterns": [
+                "Is it necessary to do our FYP with a professor?",
+                "Can we do our FYP with any teacher?"
+            ],
+            "responses": [
+                "Yes, it is necessary to associate yourself with a professor for your FYP. You can choose any teacher and discuss with them to guide you and provide assistance in completing your project."
+            ]
+        },
+        {
+            "tag": "fyp_systems_IBIT",
+            "patterns": [
+                "Are there systems available for FYPs in IBIT?",
+                "Can we reserve computers for our final year project in IBIT?"
+            ],
+            "responses": [
+                "Yes, there are dedicated labs available for final year project students in IBIT where they can work on their FYPs."
+            ]
+        },
+        {
+            "tag": "fyp_system_reservation_IBIT",
+            "patterns": [
+                "How can we reserve a system for our FYP?",
+                "Who can grant us access to on-campus systems for our FYP?"
+            ],
+            "responses": [
+                "You can request access to reserve a system for your FYP by contacting the administration office and providing them with the necessary details. They will assist you in reserving a system in the FYP lab."
+            ]
+        },
+        {
+            "tag": "fyp_duration_IBIT",
+            "patterns": [
+                "In what duration do we have to complete our FYP?",
+                "Within how many semesters should our FYP be completed?"
+            ],
+            "responses": [
+                "Your final year project must be completed before the deadline specified by the administration, typically before the final exams of the 8th semester."
+            ]
+        },
+        {
+            "tag": "fyp_grading_IBIT",
+            "patterns": [
+                "Is our final year project graded?",
+                "Does our FYP count towards our CGPA?"
+            ],
+            "responses": [
+                "Yes, your final year project is graded, and the marks obtained contribute towards both your semester GPA and cumulative GPA."
+            ]
+        },
+        {
+            "tag": "fyp_credit_hours_IBIT",
+            "patterns": [
+                "How many credit hours are allocated for the FYP?",
+                "Is the FYP considered a proper subject like other subjects?"
+            ],
+            "responses": [
+                "The Final Year Project (FYP) carries 4 credit hours, similar to regular subjects."
+            ]
+        },
+        {
+            "tag": "fyp_registration_procedure_IBIT",
+            "patterns": [
+                "What is the procedure for registering the FYP in IBIT?",
+                "How do we register our final year project with the administration?"
+            ],
+            "responses": [
+                "To register your Final Year Project (FYP) in IBIT, you need to submit your project proposal to the supervisor before the specified deadline. Upon approval, you can commence work on your FYP."
+            ]
+        },
+        {
+            "tag": "fyp_grading_authority_IBIT",
+            "patterns": [
+                "Who is responsible for grading our FYP?",
+                "Is the grading of the FYP done by professors or the administration?"
+            ],
+            "responses": [
+                "The professors who are supervising your FYP are responsible for grading it."
+            ]
+        },
+        {
+            "tag": "fyp_group_grading_IBIT",
+            "patterns": [
+                "Are group members of the FYP graded individually or as a group?",
+                "What is the grading criteria for the FYP?"
+            ],
+            "responses": [
+                "Grading criteria may vary, but in most cases, every student is graded based on their individual contributions to the FYP."
+            ]
+        },
+        {
+            "tag": "fyp_competition_IBIT",
+            "patterns": [
+                "Can we participate in competitions with our FYP?",
+                "Are FYPs recognized and awarded by IBIT?"
+            ],
+            "responses": [
+                "Yes, you can register your FYP for competitions. If it is unique and extraordinary, you may receive recognition and awards."
+            ]
+        },
+        {
+            "tag": "graduation_without_fyp_IBIT",
+            "patterns": [
+                "Is it possible to graduate without completing the FYP?",
+                "Can we complete our degree without doing the FYP?"
+            ],
+            "responses": [
+                "No, completion of the Final Year Project (FYP) is a mandatory requirement for graduation."
+            ]
+        },
+        {
+            "tag": "maximum_credit_hours_semester_IBIT",
+            "patterns": [
+                "What is the maximum number of credit hours a student can study in a semester in IBIT?",
+                "How many subjects can a student study in any semester at most?"
+            ],
+            "responses": [
+                "The maximum number of subjects a student can study in any semester in IBIT depends on their total credit hours, which cannot exceed 19. However, there may be exceptions."
+            ]
+        },
+        {
+            "tag": "lab_credit_hours_IBIT",
+            "patterns": [
+                "How many credit hours are assigned to a lab associated with a subject in IBIT?",
+                "What is the contribution of labs towards GPA in IBIT?"
+            ],
+            "responses": [
+                "Each lab associated with a subject typically carries 1 credit hour."
+            ]
+        },
+        {
+            "tag": "IBIT_dropouts",
+            "patterns": [
+                "Do students drop out from IBIT?",
+                "Do students in IBIT fail to meet the GPA requirements?"
+            ],
+            "responses": [
+                "Yes, students who fail to meet the required CGPA may drop out from the university."
+            ]
+        },
+        {
+            "tag": "IBIT_minimum_CGPA",
+            "patterns": [
+                "What is the minimum CGPA required to remain enrolled in IBIT?",
+                "What is the minimum CGPA required to complete the degree in IBIT?"
+            ],
+            "responses": [
+                "To remain enrolled in IBIT, your CGPA must be greater than 1.7, and you must have marks greater than 50 in every subject."
+            ]
+        },
+        {
+            "tag": "marks_for_4_GPA_IBIT",
+            "patterns": [
+                "How many marks are required to achieve a 4 GPA in a subject in IBIT?",
+                "What is the criteria for obtaining a 4 GPA in a subject in IBIT?"
+            ],
+            "responses": [
+                "To achieve a 4 GPA in a subject in IBIT, your marks should be greater than or equal to 85."
+            ]
+        },
+        {
+            "tag": "minimum_passing_marks_IBIT",
+            "patterns": [
+                "What is the minimum passing marks required for a subject in IBIT?",
+                "At how many marks does a student fail in a subject in IBIT?"
+            ],
+            "responses": [
+                "In IBIT, students need at least 50 marks or above to pass a subject; otherwise, they will fail."
+            ]
+        },
+        {
+            "tag": "semester_freezing_IBIT",
+            "patterns": [
+                "Is it possible for a student in IBIT to freeze a semester due to any circumstance?",
+                "How can a student freeze a semester in IBIT?"
+            ],
+            "responses": [
+                "Yes, a student in IBIT can freeze their semester after obtaining consent from their degree coordinator and providing justification for the freeze."
+            ]
+        },
+        {
+            "tag": "elective_subjects_IBIT",
+            "patterns": [
+                "Are students allowed to choose elective subjects in IBIT?",
+                "Do students have options to select subjects in IBIT?"
+            ],
+            "responses": [
+                "No, students in IBIT are required to study the subjects assigned to them in every semester, and they are not permitted to select or drop any subjects of their choice."
+            ]
+        },
+        {
+            "tag": "management_of_frozen_semester_IBIT",
+            "patterns": [
+                "How is a student who has frozen their semester managed in IBIT?",
+                "What is the procedure for resuming a frozen semester in IBIT?"
+            ],
+            "responses": [
+                "A student who has frozen their semester in IBIT is provided with a roadmap by their degree coordinator, specifying which subjects they need to study and with which batch."
+            ]
+        },
+        {
+            "tag": "dropping_a_subject_IBIT",
+            "patterns": [
+                "What does it mean to drop a subject in IBIT?",
+                "What are the criteria for dropping a subject in IBIT?"
+            ],
+            "responses": [
+                "Dropping a subject in IBIT refers to the process where a student, if they feel their marks are low or they are likely to fail the subject, submits a request form to drop the subject."
+            ]
+        },
+        {
+            "tag": "failed_subject_IBIT",
+            "patterns": [
+                "What happens when a student fails a subject in IBIT?",
+                "What is the procedure after failing a subject in IBIT?"
+            ],
+            "responses": [
+                "When a student fails a subject in IBIT, they must pass it in the next semesters by adding it to their workload along with other subjects."
+            ]
+        },
+        {
+            "tag": "procedure_after_dropping_subject_IBIT",
+            "patterns": [
+                "What is the procedure after dropping a subject in IBIT?",
+                "What happens after you drop a subject in IBIT?"
+            ],
+            "responses": [
+                "After dropping a subject in IBIT, you can add it to your schedule in the next few semesters by submitting a request form. The degree coordinator or administrator will assign you a batch to study the course with."
+            ]
+        },
+        {
+            "tag": "adding_dropped_subjects_IBIT",
+            "patterns": [
+                "Can students add dropped subjects in any semester in IBIT?",
+                "What is the procedure for adding a dropped subject in IBIT?"
+            ],
+            "responses": [
+                "Yes, students in IBIT can add dropped subjects in the following semesters if the subject is being offered to another batch. They need to submit a request to add the subject, and then the degree coordinator or administrator will assign them to a batch."
+            ]
+        },
+        {
+            "tag": "fee_for_adding_dropped_subject_IBIT",
+            "patterns": [
+                "Is there a fee for adding a dropped subject in IBIT?",
+                "How much fine does one have to pay to add a subject in IBIT?"
+            ],
+            "responses": [
+                "Yes, students are typically charged around 3000-4000 PKR for adding a dropped subject in IBIT."
+            ]
+        },
+        {
+            "tag": "late_degree_IBIT",
+            "patterns": [
+                "Can a student's degree be delayed in IBIT?",
+                "Is it possible for a degree to take more than 4 years to complete in IBIT?"
+            ],
+            "responses": [
+                "Yes, if a student fails to pass all their courses within the 4 years, their graduation will be delayed, and their degree will be extended."
+            ]
+        },
+        {
+            "tag": "maximum_credit_hours_semester_IBIT",
+            "patterns": [
+                "Can students study more than 19 credit hours in a semester in IBIT?",
+                "Is it possible for a student to add a subject even if they have completed their 19 credit hours in IBIT?"
+            ],
+            "responses": [
+                "Yes, students in IBIT can study more than 19 credit hours in a semester, but they need to request permission from their degree coordinator."
+            ]
+        },
+        {
+            "tag": "IBIT_definition",
+            "patterns": [
+                "What does IBIT stand for?",
+                "What is the meaning of IBIT?",
+                "What is the abbreviation of IBIT?",
+                "What is the full form of IBIT?"
+            ],
+            "responses": [
+                "IBIT stands for the Institute of Business and Information Technology. It is an educational institution located in Lahore, Pakistan, affiliated with the University of the Punjab."
+            ]
+        },
+        {
+            "tag": "internship_duration_IBIT",
+            "patterns": [
+                "How long is the duration of an internship for IBIT students?",
+                "When do IBIT students go on internship?"
+            ],
+            "responses": [
+                "IBIT students typically go on internship for a duration of 8 weeks as part of their academic curriculum."
+            ]
+        },
+        {
+            "tag": "internship_credit_hours_IBIT",
+            "patterns": [
+                "How many credit hours is the internship worth for IBIT students?",
+                "What is the credit hour value of the internship for IBIT students?"
+            ],
+            "responses": [
+                "The internship for IBIT students is typically worth 3 credit hours."
+            ]
+        },
+        {
+            "tag": "internship_viva_IBIT",
+            "patterns": [
+                "When is the viva or evaluation for the internship held for IBIT students?",
+                "At what point do IBIT students undergo viva for their internship?"
+            ],
+            "responses": [
+                "The viva or evaluation for the internship of IBIT students is usually conducted at the 7 semester in October or November of the internship period."
+            ]
+        },
+        {
+            "tag": "internship_placement_IBIT",
+            "patterns": [
+                "Where can IBIT students go for their internship placement?",
+                "What are the options for internship placements for IBIT students?"
+            ],
+            "responses": [
+                "IBIT students can pursue internship placements in various industries, including IT companies, business organizations, banks, startups, and other relevant sectors."
+            ]
+        },
+        {
+            "tag": "importance_of_internship_IBIT",
+            "patterns": [
+                "Why is internship important for IBIT students?",
+                "What are the benefits of undergoing an internship for IBIT students?"
+            ],
+            "responses": [
+                "Internship is crucial for IBIT students as it provides them with practical exposure to the industry, helps in applying theoretical knowledge, builds professional networks, enhances skills, and increases employability."
+            ]
+        },
+        {
+            "tag": "internship_reporting_IBIT",
+            "patterns": [
+                "To whom do IBIT students report during their internship?",
+                "Who supervises IBIT students during their internship?"
+            ],
+            "responses": [
+                "IBIT students are typically supervised by designated mentors or supervisors assigned by the host organization during their internship."
+            ]
+        },
+        {
+            "tag": "internship_evaluation_criteria_IBIT",
+            "patterns": [
+                "What criteria are used to evaluate the performance of IBIT students during their internship?",
+                "How are IBIT students assessed during their internship?"
+            ],
+            "responses": [
+                "The performance of IBIT students during their internship is evaluated based on factors such as project completion, professional conduct, communication skills, problem-solving abilities, and overall contribution to the organization."
+            ]
+        },
+        {
+            "tag": "internship_certification_IBIT",
+            "patterns": [
+                "Do IBIT students receive a certification upon completion of their internship?",
+                "Is there a formal certification process for IBIT students after their internship?"
+            ],
+            "responses": [
+                "Yes, IBIT students typically receive a certificate or acknowledgment from the host organization upon successful completion of their internship."
+            ]
+        },
+        {
+            "tag": "graduation_without_internship_IBIT",
+            "patterns": [
+                "Is it possible for IBIT students to graduate without completing an internship?",
+                "Can IBIT students obtain their degree without undergoing an internship?"
+            ],
+            "responses": [
+                "No, completing an internship is typically a mandatory requirement for graduation for IBIT students."
+            ]
+        },
+        {
+            "tag": "internship_viva_mandatory_IBIT",
+            "patterns": [
+                "Is it mandatory for IBIT students to undergo a viva or evaluation after their internship?",
+                "Do IBIT students have to complete a viva for their internship?"
+            ],
+            "responses": [
+                "Yes, undergoing a viva or evaluation after the internship is usually a mandatory part of the internship process for IBIT students."
+            ]
+        },
+        {
+            "tag": "internship_viva_process_IBIT",
+            "patterns": [
+                "Who conducts the viva for IBIT students after their internship?",
+                "What is the process for the internship viva for IBIT students?"
+            ],
+            "responses": [
+                "The viva for IBIT students after their internship is typically conducted by a panel of faculty members of respective specialization."
+            ]
+        },
+        {
+            "tag": "internship_completion_requirement_IBIT",
+            "patterns": [
+                "Is it necessary for IBIT students to complete their internship to graduate?",
+                "Do IBIT students need to fulfill the internship requirement to obtain their degree?"
+            ],
+            "responses": [
+                "Yes, fulfilling the internship requirement is essential for IBIT students to meet the graduation criteria and obtain their degree."
+            ]
+        },
+        {
+            "tag": "IBIT_department_information",
+            "patterns": [
+                "Can you provide general information about the IBIT department?",
+                "Where can I find information about the IBIT department?"
+            ],
+            "responses": [
+                "The IBIT (Institute of Business and Information Technology) department offers a range of programs focusing on business and information technology fields. For detailed information, you can visit the official website of the department https://www.ibitpu.edu.pk/ or contact the department administration."
+            ]
+        },
+        {
+            "tag": "IBIT_department_contacts",
+            "patterns": [
+                "How can I contact the administration or faculty members of the IBIT department?",
+                "What are the contact details for the IBIT department?"
+            ],
+            "responses": [
+                "You can find contact information for the administration, faculty members, and staff of the IBIT department on the department's official website. Alternatively, you can visit the department office in person or contact them via email or phone."
+            ]
+        },
+        {
+            "tag": "IBIT_department_curriculum",
+            "patterns": [
+                "What is the curriculum like for programs offered by the IBIT department?",
+                "Can you provide information about the courses and curriculum of the IBIT department?"
+            ],
+            "responses": [
+                "The curriculum of programs offered by the IBIT department typically includes a combination of business and information technology courses designed to provide students with a comprehensive understanding of both fields. You can find detailed information about the courses and curriculum on the department's official website or by contacting academic advisors."
+            ]
+        },
+        {
+            "tag": "IBIT_department_faculty",
+            "patterns": [
+                "Who are the faculty members of the IBIT department?",
+                "Can you provide a list of faculty members in the IBIT department?"
+            ],
+            "responses": [
+                "The IBIT department consists of experienced faculty members who specialize in various areas of business and information technology. You can find a list of faculty members on the department's official website or by contacting the department administration."
+            ]
+        },
+        {
+            "tag": "IBIT_department_facilities",
+            "patterns": [
+                "What facilities are available for students in the IBIT department?",
+                "Can you provide information about the facilities offered by the IBIT department?"
+            ],
+            "responses": [
+                "The IBIT department provides students with access to modern classrooms, computer labs, library resources, and other facilities to support their academic and research activities. For specific details about the facilities, you can visit the department or check their official website."
+            ]
+        },
+        {
+            "tag": "IBIT_mosque",
+            "patterns": [
+                " is IBIT have mosque?"
+            ],
+            "responses": [
+                "IBIT has mosques built in 2019. The mosque has separation for both girls and boys where stidents and staff can offer prayers."
+            ]
+        },
+        {
+            "tag": "transcript_fee",
+            "patterns": [
+                "How much transcript fees is?",
+                "how student can withderwal transcript."
+            ],
+            "responses": [
+                "The ibit student can get his/her transcript by filling the transcript form from Book shop along with the fee challan of Rs:1000. After submiting fee challan both form and challan copy submit to web master Mr. Traiq. and after 3 days student can collect transcript from Mr. Aslam."
+            ]
+        },
+        {
+            "tag": "course_withdrawal_add",
+            "patterns": [
+                "How to drop subject in IBIT?",
+                "How to withdrawal a subject?",
+                "How to add a subject?"
+            ],
+            "responses": [
+                "The process to drop the subject: student get add / drop form from Bookshop and fill the form and submit it to faculty coordinator Miss. Hira Aftab. Then The student subject is withdrawal/ drop"
+            ]
+        },
+        {
+            "tag": "fee_conession",
+            "patterns": [
+                "what is the procedure for fee conesseion?",
+                "How a student get fee conession"
+            ],
+            "responses": [
+                "The IBIT student can apply for fee conession in via the Fee conession form available on website or BookShop. After filling the form along with the required documents and submit it to Mr. Faisal. Then after one week Intviews are held and then fee conession list dispaly on noticeboard."
+            ]
+        },
+        {
+            "tag": "Result_Review",
+            "patterns": [
+                "How student can review their results?",
+                "what is the process of result revies?"
+            ],
+            "responses": [
+                "The student should submit the resilt review form along with the copy of the result to the student coodiantor and then Student coordinator organizes the meeting with the relevent subject teacher within one week."
+            ]
+        },
+        {
+            "tag": "clearance_form",
+            "patterns": [
+                "How to get clearanc from IBIT?",
+                "What is the process fro clearence?"
+            ],
+            "responses": [
+                "Graduate student or other students who wants clearence fro IBIT should submit the Clearance form available on on web site or on bookshop. After filling the form. It should be submited to the Director's PIA to get acceptence. After getting Direntor's acceptance submit to student coordinator and get documents back."
+            ]
+        },
+        {
+            "tag": "Degree",
+            "patterns": [
+                "When I will receive my degree?",
+                "after graduation how much time i can reciece my degree?"
+            ],
+            "responses": [
+                "After graduation you will recieve your degree in 6 months. frist you have to get the clearence and then recieve your transcript 3-4 months then you aply for the degree."
+            ]
+        },
+        {
+            "tag": "annual_dinnar",
+            "patterns": [
+                "does IBIT offer favour well annual dinnar?",
+                "when annual dinner is held",
+                "does IBIT offeres Annual dinner"
+            ],
+            "responses": [
+                "IBIT Offers annual dinner to its student in between Jan to Feb. And the dinner is spounsor by the department to its students"
+            ]
+        },
+        {
+            "tag": "forign_students_admission",
+            "patterns": [
+                "what is the criteria for the international students admission?",
+                "can international students apply to IBIT"
+            ],
+            "responses": [
+                "International students are welcome to apply to IBIT. They need to follow the admission process and meet the eligibility criteria like passing intermediate and matric exams with a minimum score and passing HEC entrance exam USAT with a minimum score."
+            ]
+        },
+        {
+            "tag": "admission_documents",
+            "patterns": [
+                "what are the documents required for admission?",
+                "what documents needed for after my name in the list "
+            ],
+            "responses": [
+                "The documents required for admission are: Matriculation, Intermediate,, USAT result, National ID, domicile certificate and affidavit. These documents are submitted to the departmetn and then Fee challen is generated and student get enrolled in IBIT."
+            ]
+        },
+        {
+            "tag": "common_room",
+            "patterns": [
+                "Does IBIT have common room?",
+                "Does IBIT have common room for girls?"
+            ],
+            "responses": [
+                "Yes, IBIT have common room for girls. Where they can stay for a while during their free lectures."
+            ]
+        },
+        {
+            "tag": "specialization",
+            "patterns": [
+                "What are the specialization offer for BBIT?",
+                "How many specialization are offer in IBIT"
+            ],
+            "responses": [
+                "IBIT offers Three (3) specialization in BBIT during the studies. These specialization are Marketing, Finance and Information Technology. And students are free to choose their specialization based on their interest."
+            ]
+            
+        },
+        {
+            "tag": "internship_viva_schedule_IBIT",
+            "patterns": [
+                "When will my internship viva be conducted?",
+                "What is the schedule for the internship viva for IBIT students?",
+                "How do I know the date of my internship viva?"
+            ],
+            "responses": [
+                "After the internship report submission, the internship viva can be scheduled on any day. A notice will be sent prior to inform students of the specific date and time."
+            ]
+        },
+        {
+            "tag": "ibit_information",
+            "patterns": [
+                "What is IBIT?",
+                "Can you tell me about IBIT?",
+                "What does IBIT stand for?",
+                "Provide information about IBIT"
+            ],
+            "responses": [
+                "IBIT stands for Institute of Business and Information Technology. It is an educational institute that offers programs in business and information technology, aiming to equip students with the skills and knowledge necessary to succeed in these fields."
+            ]
+        },
+        {
+            "tag": "bbit_information",
+            "patterns": [
+                "What is BBIT?",
+                "Can you tell me about BBIT?",
+                "What does BBIT stand for?",
+                "Provide information about BBIT"
+            ],
+            "responses": [
+                "BBIT stands for Bachelor of Business and Information Technology. It is an undergraduate degree program that combines studies in business administration and information technology, preparing students for careers that require expertise in both fields."
+            ]
+        },
+        {
+            "tag": "ibit_cafe_canteen",
+            "patterns": [
+                "Tell me about the cafe at IBIT",
+                "Is there a canteen at IBIT?",
+                "What are the food options at IBIT?",
+                "Does IBIT have a canteen for students?",
+                "What is available at the IBIT canteen?"
+            ],
+            "responses": [
+                "IBIT has a well-equipped canteen that provides a variety of food and beverage options for students and faculty. The canteen offers snacks, meals, and drinks at reasonable prices. It serves as a convenient spot for students to relax, socialize, and enjoy refreshments between classes."
+            ]
+        },
+        {
+            "tag": "ibit_bookshop_book shop",
+            "patterns": [
+                "Tell me about the bookshop at IBIT",
+                "Is there a bookshop at IBIT?",
+                "Where can I buy course books at IBIT?",
+                "Does IBIT have a bookshop with printing facilities?",
+                "What services does the IBIT bookshop provide?"
+            ],
+            "responses": [
+                "The bookshop at IBIT offers a comprehensive range of services and products. It provides photocopying and printing facilities, as well as a wide selection of stationery and course-related books. The bookshop is open all the time, ensuring students have convenient access to the resources they need."
+            ]
+        },
+        {
+            "tag": "number_of_specializations",
+            "patterns": [
+                "How many specializations does IBIT offer?",
+                "What are the different specializations at IBIT?",
+                "Can you list the specializations available at IBIT?"
+            ],
+            "responses": [
+                "IBIT offers only three specializations:\n- IT\n- Marketing\n- Finance"
+            ]
+        },
+        {
+            "tag": "contact_us",
+            "patterns": [
+                "How can I contact IBIT?",
+                "What is the contact information for IBIT?",
+                "Where is IBIT located?"
+            ],
+            "responses": [
+                "You can contact IBIT at the University of the Punjab, Quaid-e-Azam Campus, Lahore-54590, Pakistan. For general inquiries, call +92-42-99230825-6, and for student-related queries, email info@ibitpu.edu.pk. For specific department contacts, visit the contact page at https://www.ibitpu.edu.pk/contact-us.php."
+            ]
+        },
+        {
+            "tag": "forms_availability_with_link",
+            "patterns": [
+                "Where can I find the MBIT Thesis Registration (DDPC) form?",
+                "How do I access the MBIT Thesis Title Approval Form?",
+                "Is the MBIT Thesis Progress Report form available online?",
+                "Can I download the Convocation Registration Form from the website?",
+                "Where can I get the FYP - Group Formation Form?",
+                "Is the Internship Joining Form accessible online?",
+                "How can I obtain the Internship OnSite Supervisors Evaluation form?",
+                "Where can I find the Reference for Survey form?",
+                "Is the IBIT Societies Membership Form available for download?",
+                "How do I access the Course(s) Add/Drop Form?",
+                "Can I find the Course(s) Repeat Form on the website?",
+                "Where can I get the Course(s) Withdraw Form?",
+                "Is the Specialization Form available online?",
+                "How can I obtain the Specialization Sought Affidavit form?",
+                "Where can I find the Clearance Form?",
+                "Is the Change in Addressee Form accessible online?",
+                "How do I access the Transcript Request Form?",
+                "Can I download the Result Review Form from the website?",
+                "Where can I get the Fee Concession Form (IBIT)?",
+                "Is the Fee Concession Form (PU) available for download?"
+            ],
+            "responses": [
+                "Yes, the [MBIT Thesis Registration (DDPC) form](https://ibitpu.edu.pk/) is available for download on the IBIT website.",
+                "You can access the [MBIT Thesis Title Approval Form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "The [MBIT Thesis Progress Report](https://ibitpu.edu.pk/) form is available online for download.",
+                "Yes, you can download the [Convocation Registration Form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "The [FYP - Group Formation Form](https://ibitpu.edu.pk/) can be found on the IBIT website.",
+                "Yes, the [Internship Joining Form](https://ibitpu.edu.pk/) is accessible online.",
+                "You can obtain the [Internship OnSite Supervisors Evaluation](https://ibitpu.edu.pk/) form from the IBIT website.",
+                "The [Reference for Survey form](https://ibitpu.edu.pk/) is available for download on the IBIT website.",
+                "Yes, the [IBIT Societies Membership Form](https://ibitpu.edu.pk/) is available for download.",
+                "You can access the [Course(s) Add/Drop Form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "Yes, the [Course(s) Repeat Form](https://ibitpu.edu.pk/) can be found on the IBIT website.",
+                "The [Course(s) Withdraw Form](https://ibitpu.edu.pk/) is available for download on the IBIT website.",
+                "Yes, the [Specialization Form](https://ibitpu.edu.pk/) is accessible online.",
+                "You can obtain the [Specialization Sought Affidavit form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "The [Clearance Form](https://ibitpu.edu.pk/) can be found on the IBIT website.",
+                "Yes, the [Change in Addressee Form](https://ibitpu.edu.pk/) is available for download.",
+                "You can access the [Transcript Request Form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "Yes, you can download the [Result Review Form](https://ibitpu.edu.pk/) from the IBIT website.",
+                "The [Fee Concession Form (IBIT)](https://ibitpu.edu.pk/) is available for download on the IBIT website.",
+                "Yes, the [Fee Concession Form (PU)](https://ibitpu.edu.pk/) can be found on the IBIT website."
+            ]
+        },
+        {
+            "tag": "IBIT_leave_process",
+            "patterns": [
+                "How do I get leave?",
+                "How do I submit a leave application?",
+                "Where do I get a leave application form?"
+            ],
+            "responses": [
+                "To apply for leave at IBIT, you need a doctor's prescription for bed rest with complete information about the medical emergency. This prescription must be attested by the PU medical centre. After attestation, attach it with your leave application form, which can be obtained from the administration office, and submit it to the student coordinator, Sir Faisal."
+            ]
+        },
+        {
+            "tag": "switch_majors",
+            "patterns": [
+                "Can I switch majors?",
+                "Is it possible to change my major?",
+                "Am I allowed to switch my field of study?"
+            ],
+            "responses": [
+                "Yes, it may be possible to switch majors at IBIT, but it depends on various factors such as availability, academic performance, and approval from the department. However, please note that switching majors is typically allowed only after 2-3 weeks of choosing a specialization. You should consult with your academic advisor or the department head for guidance on the process and requirements."
+            ]
+        },
+        {
+            "tag": "issue_book",
+            "patterns": [
+                "How do I issue a book from the IBIT library?",
+                "What is the process for borrowing books from the IBIT library?",
+                "Can you guide me on how to borrow a book from the IBIT library?"
+            ],
+            "responses": [
+                "To borrow a book from the IBIT library, you first choose the book you want to borrow. Then, inform the librarian about your selection. If approved, they will assist you with the necessary paperwork and issue the book to you."
+            ]
+        },
+        {
+            "tag": "main_library_card",
+            "patterns": [
+                "How do I make the main library card?",
+                "What is the process for obtaining a main library card?",
+                "Can you guide me on how to get a main library card?"
+            ],
+            "responses": [
+                "To obtain a main library card, you need to follow these steps:\n1. Fill out a form and submit a small fee at the main library.\n2. The library will provide you with a form that you need to fill out and get approved by your department librarian.\n3. Once approved, submit the form back to the main library.\n4. The library will provide you with an estimate of when the card will be ready for collection."
+            ]
+        },
+        {
+            "tag": "bs_bbit_subjects",
+            "patterns": [
+                "What are the subjects of each semester?",
+                "What will I study in the first semester?",
+                "What will I study in the second semester?",
+                "What will I study in the third semester?",
+                "What will I study in the fourth semester?",
+                "What will I study in the fifth semester?",
+                "What will I study in the sixth semester?",
+                "What will I study in the seventh semester?",
+                "What will I study in the eighth semester?",
+                "Can you provide the semester-wise breakup of subjects for BBIT?",
+                "What subjects are taught in the BBIT program at IBIT?"
+            ],
+            "responses": [
+                "You can find the semester-wise breakup of subjects for the BBIT program at IBIT on the official website.",
+                "For detailed information, please visit: https://ibitpu.edu.pk/bbit-hons.php under the heading 'Scheme of Study Semester Wise Breakup'."
+            ]
+        },
+        {
+            "tag": "blood_donor_society_registration",
+            "patterns": [
+                "How do I register for the Blood Donor Society at IBIT?",
+                "What is the process to become a part of the Blood Donor Society at IBIT?"
+            ],
+            "responses": [
+                "To join the Blood Donor Society at IBIT, download the IBIT Societies Membership Form from the IBIT website. Complete the form and submit it to the society's convener before the specified deadline. Ensure you have a valid IBIT ID. The society's in-charge will conduct interviews with all candidates, and successful applicants will be notified once the selection process is complete."
+            ]
+        },
+        {
+            "tag": "industrial_linkage_registration",
+            "patterns": [
+                "How do I become a member of the Industrial Linkage society at IBIT?",
+                "What steps should I take to join the Industrial Linkage society?"
+            ],
+            "responses": [
+                "To become a member of the Industrial Linkage society at IBIT, download and fill out the IBIT Societies Membership Form available on the IBIT website. Submit the completed form to the society's convener, ensuring you meet the membership eligibility with a valid IBIT ID. The society will review your application and conduct interviews. Selected candidates will be notified after the interviews."
+            ]
+        },
+        {
+            "tag": "event_management_society_registration",
+            "patterns": [
+                "How can I join the Event Management Society at IBIT?",
+                "What is the registration process for the Event Management Society?"
+            ],
+            "responses": [
+                "Join the Event Management Society at IBIT by downloading the IBIT Societies Membership Form. Fill out the form and submit it to the society's convener within the deadline. A valid IBIT ID is required for membership. Interviews will be conducted by the society's in-charge, and successful candidates will be informed once selected."
+            ]
+        },
+        {
+            "tag": "bits_society_registration",
+            "patterns": [
+                "How do I join the BITS (Business and Information Technology) Society at IBIT?",
+                "What are the steps to become a member of the BITS Society?"
+            ],
+            "responses": [
+                "To join the BITS Society at IBIT, download the IBIT Societies Membership Form from their website. After filling out the form, submit it to the society's convener before the deadline. Membership requires a valid IBIT ID. Interviews are part of the selection process, and successful applicants will be notified accordingly."
+            ]
+        },
+        {
+            "tag": "litrary_talash_society_registration",
+            "patterns": [
+                "How can I become a member of the Talash/Litrary Society at IBIT?",
+                "What is the procedure to register for the Talash Society?"
+            ],
+            "responses": [
+                "To register for the Talash/Litrary Society at IBIT, obtain the IBIT Societies Membership Form from the IBIT website. Complete and submit the form to the society's convener, ensuring you have a valid IBIT ID. The society will hold interviews for all applicants, and successful candidates will be notified of their selection."
+            ]
+        },
+        {
+            "tag": "sports_society_registration",
+            "patterns": [
+                "How do I sign up for the Sports Society at IBIT?",
+                "What is the process to become part of the Sports Society?"
+            ],
+            "responses": [
+                "To sign up for the Sports Society at IBIT, download and complete the IBIT Societies Membership Form from their official website. Submit the filled form to the society's convener by the due date. Ensure you have a valid IBIT ID. Interviews will be conducted for all applicants, and those selected will be informed."
+            ]
+        },
+        {
+            "tag": "recreational_tours_society_registration",
+            "patterns": [
+                "How do I join the Recreational Tours Society at IBIT?",
+                "What steps should I follow to become a member of the Recreational Tours Society?"
+            ],
+            "responses": [
+                "Yes, you can join the Recreational Tours Society by first downloading the IBIT Societies Membership Form from https://ibitpu.edu.pk/. Once you have completed the form, submit it to the society's convener before the specified deadline. Membership eligibility requires a valid IBIT ID. Submit the completed form to the student coordinator between September and October. Following your submission, the society's in-charge will conduct interviews with all candidates. Successful applicants will be notified when the selection process is complete. We wish you the best of luck in becoming a member!"
+            ]
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    ]
+}

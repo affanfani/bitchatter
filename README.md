@@ -7,10 +7,11 @@ A Flask-based chatbot application with LLM integration and RAG (Retrieval Augmen
 This project provides a professional chatbot API built with Flask, featuring:
 
 - RESTful API architecture with Flask blueprints
-- LLM integration with multiple providers (OpenAI, Ollama, OpenRouter)
+- **OpenRouter LLM integration** with Llama 3.3 70B (free tier available)
 - Vector database for semantic search (ChromaDB, FAISS)
 - Interactive API documentation with Swagger/OpenAPI
 - Modular service layer architecture
+- Session management for conversation tracking
 
 ## Project Structure
 
@@ -20,9 +21,14 @@ llm-practice/
 ├── requirment.txt              # Python dependencies
 ├── Makefile                    # Development commands
 ├── app/
-│   ├── api/                    # API routes and blueprints
+│   ├── api/
+│   │   ├── api.py              # Main API entry point (versioning)
+│   │   └── v1/                 # Version 1 endpoints
+│   │       ├── chat.py         # Chat endpoints
+│   │       └── health.py       # Health & status endpoints
 │   ├── models/                 # Database models
-│   ├── services/               # Business logic (LLM, Vector DB)
+│   ├── services/
+│   │   └── llm_service.py      # LLM integration service
 │   ├── utils/                  # Helper functions
 │   ├── static/                 # Static assets
 │   └── templates/              # HTML templates
@@ -72,6 +78,21 @@ Interactive API documentation is available at:
 - **Swagger UI**: `http://localhost:5000/apidocs`
 - **OpenAPI Spec**: `http://localhost:5000/apispec.json`
 
+### Quick Test
+
+Test the chatbot API:
+```bash
+# Using the test script
+python test_chat.py
+
+# Or with cURL
+curl -X POST http://localhost:5000/api/v1/chat/message \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Hello, who are you?"}'
+```
+
+See `API_QUICK_REFERENCE.md` for more examples and `API_VERSIONING_GUIDE.md` for API versioning details.
+
 ## Development Commands
 
 Using the Makefile:
@@ -110,20 +131,47 @@ make clean         # Clean cache files
 
 ## Architecture
 
-The project follows a modular architecture with clear separation of concerns:
+The project follows **professional API versioning** and modular architecture with clear separation of concerns:
 
-- **API Layer** (`app/api/`) - RESTful endpoints and request handling
+- **API Layer** (`app/api/`) - Versioned RESTful endpoints (v1, v2, etc.)
+  - `api.py` - Main entry point and version routing
+  - `v1/` - Version 1 endpoints (isolated and independent)
 - **Service Layer** (`app/services/`) - Business logic and LLM integration
 - **Model Layer** (`app/models/`) - Database models and schemas
 - **Configuration** (`config/`) - Application settings and environment management
 
+This architecture enables:
+- ✅ **API Versioning** - Support multiple API versions simultaneously
+- ✅ **Backward Compatibility** - Old clients continue working when new versions are released
+- ✅ **Independent Evolution** - Each version evolves independently
+- ✅ **Professional Standard** - Following industry best practices (Stripe, GitHub, Twitter)
+
+## API Endpoints
+
+The API follows **professional versioning best practices** with URL-based versioning (`/api/v1/`, `/api/v2/`, etc.).
+
+### General Endpoints
+- `GET /` - Welcome message and endpoint information
+- `GET /api` - API root with version information
+- `GET /apidocs` - Interactive API documentation (Swagger UI)
+- `GET /apispec.json` - OpenAPI specification
+
+### Version 1 Endpoints
+- `GET /api/v1/health` - Health check
+- `GET /api/v1/status` - API status and configuration
+- `POST /api/v1/chat/message` - Send a message to the chatbot
+- `GET /api/v1/chat/models` - Get current model information
+
+See `API_QUICK_REFERENCE.md` for detailed examples and `API_VERSIONING_GUIDE.md` for versioning strategy.
+
 ## Features
 
 - **RESTful API** - Clean, well-structured API endpoints
-- **LLM Integration** - Support for multiple LLM providers
-- **Vector Search** - Semantic search using RAG
+- **OpenRouter Integration** - Free access to Llama 3.3 70B and other models
+- **Conversation Tracking** - Session management for multi-turn conversations
+- **Vector Search** - Semantic search using RAG (planned)
 - **API Documentation** - Interactive Swagger UI
-- **Authentication** - JWT-based authentication
+- **Authentication** - JWT-based authentication (planned)
 - **Rate Limiting** - Request throttling for API protection
 - **Database Support** - PostgreSQL and SQLite
 - **Background Tasks** - Async processing with Celery
