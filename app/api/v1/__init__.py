@@ -10,7 +10,7 @@ from flask import Blueprint
 bp = Blueprint("api_v1", __name__)
 
 # Import routes to register them with the blueprint
-from app.api.routes.v1 import chat_routes, health_routes  # noqa: E402,F401
+from app.api.v1.routes import chat_routes, health_routes, intent_routes  # noqa: E402,F401
 
 __all__ = ["bp"]
 

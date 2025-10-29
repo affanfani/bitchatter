@@ -47,3 +47,13 @@ dev-setup:  ## Complete development setup
 	make install
 	make init-db
 	@echo "Development setup complete! Run 'make run' to start the server."
+
+build-vectors:  ## Build FAISS vector database from Ibit_data.json
+	python build_vector_db.py
+
+clean-vectors:  ## Remove vector database files
+	rm -rf data/vector_db/
+
+rebuild-vectors:  ## Rebuild vector database (clean + build)
+	make clean-vectors
+	make build-vectors
