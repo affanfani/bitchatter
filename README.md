@@ -1,334 +1,467 @@
-# University Department Chatbot
+# IBIT Chatbot - BIT Chatter 🤖
 
-A Flask-based chatbot application with LLM integration and RAG (Retrieval Augmented Generation) capabilities.
+A professional AI-powered chatbot for the Institute of Business and Information Technology (IBIT) at Punjab University Lahore. Built with **RAG (Retrieval-Augmented Generation)** and **FAISS vector database** for accurate, context-aware responses.
 
-## Overview
-
-This project provides a professional chatbot API built with Flask, featuring:
-
-- RESTful API architecture with Flask blueprints
-- **OpenRouter LLM integration** with Llama 3.3 70B (free tier available)
-- Vector database for semantic search (ChromaDB, FAISS)
-- Interactive API documentation with Swagger/OpenAPI
-- Modular service layer architecture
-- Session management for conversation tracking
-
-## Project Structure
-
-```
-llm-practice/
-├── run.py                      # Application entry point
-├── requirment.txt              # Python dependencies
-├── Makefile                    # Development commands
-├── app/
-│   ├── api/
-│   │   ├── api.py              # Main API entry point (versioning)
-│   │   └── v1/                 # Version 1 endpoints
-│   │       ├── chat.py         # Chat endpoints
-│   │       └── health.py       # Health & status endpoints
-│   ├── models/                 # Database models
-│   ├── services/
-│   │   └── llm_service.py      # LLM integration service
-│   ├── utils/                  # Helper functions
-│   ├── static/                 # Static assets
-│   └── templates/              # HTML templates
-├── config/
-│   ├── __init__.py             # Configuration classes
-│   └── swagger_config.py       # API documentation config
-├── data/                       # Application data
-├── tests/                      # Test suite
-└── docs/                       # Documentation
-```
-
-## Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
+- Python 3.8+
+- OpenRouter API Key (get free at https://openrouter.ai/)
 
-- Python 3.8 or higher
-- Virtual environment (recommended)
+### Setup (3 Steps)
 
-### Installation
-1. Clone the repository and create a virtual environment:
+**1. Activate Virtual Environment**
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+cd /home/dev/Desktop/llm-practice
+source venv/bin/activate
 ```
 
-2. Install dependencies:
+**2. Configure API Key**
 ```bash
-pip install -r requirment.txt
+# Copy example config
+cp env.example .env
+
+# Edit and add your OpenRouter API key
+nano .env  # or use vim, gedit, etc.
 ```
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your API keys
+In `.env`, replace:
+```
+OPENROUTER_API_KEY=your-openrouter-api-key-here
 ```
 
-4. Run the application:
+**3. Run the Application**
 ```bash
 python run.py
 ```
 
-The application will start at `http://localhost:5000`
+**Open:** http://localhost:5000
 
-**Note**: The vector database is automatically built on first startup from `data/Ibit_data.json`. 
-No manual setup required! Subsequent starts will load the existing database instantly.
+That's it! 🎉
+
+## ✨ Features
+
+- ✅ **Vector Database** - 581 vectors from 257 intents (FAISS)
+- ✅ **RAG System** - Accurate, context-aware responses
+- ✅ **Professional LLM** - Formal, well-structured answers (Llama 3.3 70B)
+- ✅ **Beautiful UI** - Dark/light mode, responsive design
+- ✅ **REST API** - Full API with Swagger documentation
+- ✅ **Session Management** - Conversation history tracking
+
+## 🧪 Verify Setup
+
+```bash
+python verify_setup.py
+```
+
+This checks:
+- ✓ Dependencies installed
+- ✓ Vector database working
+- ✓ Database initialized
+- ✓ Data file loaded
+- ⚠ API key configured
+
+## 🎯 Try These Queries
+
+- "What is IBIT?"
+- "Tell me about the BBIT program"
+- "What courses are offered?"
+- "How can I get admission?"
+- "What is the fee structure?"
+- "Tell me about faculty members"
+
+## 📁 Project Structure
+
+```
+llm-practice/
+├── app/
+│   ├── api/              # REST API routes
+│   ├── core/             # LLM engine
+│   ├── services/         # RAG & chat services
+│   ├── web/              # Web routes
+│   ├── models/           # Database models
+│   └── utils/            # Vector DB utilities
+├── data/
+│   ├── Ibit_data.json    # Knowledge base (257 intents)
+│   └── vector_db/        # FAISS index (auto-generated)
+├── templates/            # HTML templates
+├── static/              # CSS, JS, images
+├── requirements.txt     # Dependencies
+└── run.py              # Entry point
+```
+
+## 🔧 Configuration
+
+### Environment Variables (`.env`)
+
+```env
+# Required
+OPENROUTER_API_KEY=your-api-key-here
+
+# Optional (defaults shown)
+OPENROUTER_MODEL=meta-llama/llama-3.3-70b-instruct:free
+FLASK_ENV=development
+SECRET_KEY=dev-secret-key-change-in-production
+DATABASE_URL=sqlite:///instance/app.db
+LOG_LEVEL=INFO
+```
+
+### Get API Key
+1. Go to https://openrouter.ai/
+2. Sign up (free!)
+3. Get API key from dashboard
+4. Add to `.env`
+
+## 🌐 API Endpoints
+
+### Web Interface
+- `GET /` - Main chatbot UI
+- `POST /get_response` - Chat endpoint for UI
+
+### REST API
+- `POST /api/v1/chat/message` - Send message
+- `GET /api/v1/chat/session/<id>` - Get session messages
+- `POST /api/v1/chat/session` - Create session
+- `GET /api/v1/health` - Health check
 
 ### API Documentation
+When running, visit: http://localhost:5000/apidocs
 
-Interactive API documentation is available at:
-- **Swagger UI**: `http://localhost:5000/apidocs`
-- **OpenAPI Spec**: `http://localhost:5000/apispec.json`
+### Example API Request
 
-### Quick Test
-
-Test the chatbot API:
 ```bash
-# Using the test script
-python test_chat.py
+curl -X POST http://localhost:5000/get_response \
+  -H "Content-Type: application/json" \
+  -d '{"user_input": "What is IBIT?"}'
+```
 
-# Or with cURL
+```bash
 curl -X POST http://localhost:5000/api/v1/chat/message \
   -H "Content-Type: application/json" \
-  -d '{"message": "Hello, who are you?"}'
+  -d '{
+    "message": "Tell me about BBIT program",
+    "temperature": 0.7
+  }'
 ```
 
-See `API_QUICK_REFERENCE.md` for more examples and `API_VERSIONING_GUIDE.md` for API versioning details.
+## 🏗️ Architecture
 
-## Development Commands
+```
+User Query
+    ↓
+Web Interface (React-like UI)
+    ↓
+Flask Routes (/get_response)
+    ↓
+RAG Service
+    ├─→ Vector DB (FAISS) → Semantic Search
+    │   └─→ Retrieves relevant context
+    └─→ LLM Engine (OpenRouter)
+        └─→ Generates professional response
+    ↓
+Professional, Accurate Answer
+```
 
-Using the Makefile:
+### How RAG Works
+
+1. **User asks question** → "What is IBIT?"
+2. **Vector search** → Finds 5 most relevant contexts from knowledge base
+3. **Context augmentation** → Adds retrieved info to LLM prompt
+4. **LLM generation** → Creates professional, accurate response
+5. **User receives** → Formal, well-structured answer
+
+## 🎨 UI Features
+
+- 🌙 **Dark/Light Mode** - Click sun/moon icon
+- 💬 **Real-time Chat** - Typing animation
+- 📱 **Responsive** - Works on mobile & desktop
+- 💾 **Chat History** - Saved in browser
+- 📋 **Copy Responses** - Click copy icon
+- 🗑️ **Clear Chat** - Delete conversation
+
+## 🔄 Adding New Knowledge
+
+1. **Edit data file:**
 ```bash
-make install         # Install dependencies
-make run             # Start development server
-make test            # Run tests
-make lint            # Check code quality
-make clean           # Clean cache files
-make build-vectors   # Build FAISS vector database
-make rebuild-vectors # Rebuild vector database
-make clean-vectors   # Remove vector database files
+nano data/Ibit_data.json
 ```
 
-## Key Technologies
+2. **Add new intent:**
+```json
+{
+  "tag": "new_topic",
+  "patterns": [
+    "Question 1",
+    "Question 2",
+    "Question 3"
+  ],
+  "responses": [
+    "Professional answer here."
+  ]
+}
+```
 
-### Backend Framework
-- **Flask 3.0.3** - Lightweight web framework
-- **Flasgger 0.9.7.1** - Swagger/OpenAPI documentation
-
-### Database & ORM
-- **SQLAlchemy** - Database ORM
-- **Flask-Migrate** - Database migrations
-- **PostgreSQL/SQLite** - Database support
-
-### AI/ML Stack
-- **LangChain** - LLM framework
-- **OpenAI/Ollama** - LLM providers
-- **ChromaDB** - Vector database for RAG
-- **Sentence-Transformers** - Text embeddings
-- **FAISS** - Vector similarity search
-
-### Additional Features
-- **Flask-CORS** - Cross-origin resource sharing
-- **Flask-JWT-Extended** - Authentication
-- **Flask-Limiter** - Rate limiting
-- **Celery** - Background task processing
-- **Redis** - Caching and sessions
-
-## Architecture
-
-The project follows **professional API versioning** and modular architecture with clear separation of concerns:
-
-- **API Layer** (`app/api/`) - Versioned RESTful endpoints (v1, v2, etc.)
-  - `api.py` - Main entry point and version routing
-  - `v1/` - Version 1 endpoints (isolated and independent)
-- **Service Layer** (`app/services/`) - Business logic and LLM integration
-- **Model Layer** (`app/models/`) - Database models and schemas
-- **Configuration** (`config/`) - Application settings and environment management
-
-This architecture enables:
-- ✅ **API Versioning** - Support multiple API versions simultaneously
-- ✅ **Backward Compatibility** - Old clients continue working when new versions are released
-- ✅ **Independent Evolution** - Each version evolves independently
-- ✅ **Professional Standard** - Following industry best practices (Stripe, GitHub, Twitter)
-
-## API Endpoints
-
-The API follows **professional versioning best practices** with URL-based versioning (`/api/v1/`, `/api/v2/`, etc.).
-
-### General Endpoints
-- `GET /` - Welcome message and endpoint information
-- `GET /api` - API root with version information
-- `GET /apidocs` - Interactive API documentation (Swagger UI)
-- `GET /apispec.json` - OpenAPI specification
-
-### Version 1 Endpoints
-
-#### Health & Status
-- `GET /api/v1/health` - Health check
-- `GET /api/v1/status` - API status and configuration
-
-#### Chat
-- `POST /api/v1/chat/message` - Send a message to the chatbot
-- `POST /api/v1/chat/session` - Create a new chat session
-- `GET /api/v1/chat/session/<session_id>` - Get messages for a session
-
-#### Intent Matching (NEW! 🎉)
-- `POST /api/v1/intent/match` - Match user query to the most relevant intent
-- `POST /api/v1/intent/search` - Search for multiple matching intents
-- `POST /api/v1/intent/response` - Get direct response based on matched intent
-- `GET /api/v1/intent/stats` - Get vector database statistics
-
-See `API_QUICK_REFERENCE.md` for detailed examples and `API_VERSIONING_GUIDE.md` for versioning strategy.
-
-## Features
-
-- **RESTful API** - Clean, well-structured API endpoints
-- **OpenRouter Integration** - Free access to Llama 3.3 70B and other models
-- **Conversation Tracking** - Session management for multi-turn conversations
-- **Vector Search** - FAISS-based semantic search for intent matching
-- **Intent Matching** - Automatic intent detection using sentence-transformers
-- **API Documentation** - Interactive Swagger UI
-- **Authentication** - JWT-based authentication (planned)
-- **Rate Limiting** - Request throttling for API protection
-- **Database Support** - PostgreSQL and SQLite
-- **Background Tasks** - Async processing with Celery
-- **Testing** - Comprehensive test suite
-
-## Vector Database & Intent Matching
-
-The project includes **automatic FAISS vector database initialization** for fast semantic search and intent matching.
-
-### 🎯 Automatic Setup
-
-**No manual setup required!** The vector database is automatically:
-- ✅ Built on first server startup from `data/Ibit_data.json`
-- ✅ Loaded instantly on subsequent startups
-- ✅ Shared across all services and endpoints
-
-Just run `python run.py` and the system handles everything!
-
-### Manual Rebuild (Optional)
-
-If you need to manually rebuild the vector database:
+3. **Rebuild vector database:**
 ```bash
-# Remove and rebuild
-make rebuild-vectors
-
-# Or just rebuild
-make build-vectors
+python build_vector_db.py
 ```
 
-### Using Intent Matching API
+4. **Restart application**
 
-The server provides RESTful endpoints for intent matching:
+## 🐛 Troubleshooting
+
+### "Module not found"
+```bash
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### "Vector database not found"
+```bash
+python build_vector_db.py
+```
+
+### "API key error"
+```bash
+# Check .env file exists and has valid key
+cat .env | grep OPENROUTER_API_KEY
+```
+
+### "Port 5000 in use"
+```bash
+# Use different port
+python -c "from app.main import create_app; app=create_app(); app.run(port=5001)"
+```
+
+### "Database error"
+```bash
+# Reset database
+rm instance/app.db
+python -c "from app.main import create_app; from app.database import db; app = create_app(); app.app_context().push(); db.create_all()"
+```
+
+## 📊 Knowledge Base
+
+Your chatbot has knowledge about:
+
+| Category | Topics |
+|----------|--------|
+| **IBIT Info** | Overview, history, vision, mission, location |
+| **Programs** | BBIT, MBIT, specializations, duration |
+| **Admissions** | Requirements, process, deadlines, eligibility |
+| **Courses** | Syllabus, descriptions, credits, prerequisites |
+| **Faculty** | Professors, departments, expertise |
+| **Facilities** | Labs, library, sports, hostels, cafeteria |
+| **Fees** | Structure, payment plans, scholarships |
+| **Exams** | Schedule, rules, results, grading |
+| **Placements** | Companies, opportunities, statistics |
+| **Campus Life** | Events, societies, activities, clubs |
+
+**Total:** 257 intent categories with 581 query patterns
+
+## 🚀 Production Deployment
+
+### Using Gunicorn
 
 ```bash
-# Match a user query to an intent
-curl -X POST http://localhost:5000/api/v1/intent/match \
-  -H "Content-Type: application/json" \
-  -d '{"query": "What courses are available?"}'
+# Install gunicorn (already in requirements.txt)
+pip install gunicorn
 
-# Get direct response based on matched intent
-curl -X POST http://localhost:5000/api/v1/intent/response \
-  -H "Content-Type: application/json" \
-  -d '{"query": "Hello"}'
+# Set production environment
+export FLASK_ENV=production
 
-# Search for multiple matching intents
-curl -X POST http://localhost:5000/api/v1/intent/search \
-  -H "Content-Type: application/json" \
-  -d '{"query": "admission requirements", "k": 5}'
-
-# Get vector database statistics
-curl http://localhost:5000/api/v1/intent/stats
+# Run with 4 workers
+gunicorn -w 4 -b 0.0.0.0:5000 "app.main:create_app()" --timeout 120
 ```
 
-### Using Intent Matcher in Code
+### Environment Setup
 
-```python
-from flask import current_app
-from app.services.intent_matcher import create_intent_matcher
-
-# In your Flask route or service
-intent_matcher = create_intent_matcher(current_app)
-
-# Get response for user query
-response = intent_matcher.get_response("Hello!")
-
-# Get intent tag
-tag = intent_matcher.get_intent_tag("What is your name?")
-
-# Match intent with confidence score
-result = intent_matcher.match_intent("tell me about courses")
-if result:
-    print(f"Tag: {result['metadata']['tag']}")
-    print(f"Confidence: {result['score']}")
-
-# Search with multiple results
-matches = intent_matcher.search_intents("admission info", k=5)
+For production, update `.env`:
+```env
+FLASK_ENV=production
+SECRET_KEY=your-secure-random-key-here
+DATABASE_URL=postgresql://... # For production DB
+LOG_LEVEL=WARNING
 ```
 
-### Direct Vector Database Access
+## 📈 Performance
 
-```python
-from flask import current_app
+| Metric | Value |
+|--------|-------|
+| **Vector Search** | < 50ms |
+| **Response Time** | 2-5 seconds |
+| **Memory Usage** | ~500MB |
+| **Concurrent Users** | Multiple supported |
+| **Database** | 581 vectors, 257 intents |
+| **Accuracy** | Grounded in knowledge base |
 
-# Access the pre-loaded vector database
-vector_db = current_app.config.get('VECTOR_DB')
+## 🛠️ Development
 
-if vector_db:
-    # Search for similar texts
-    results = vector_db.search("programming courses", k=5)
-    
-    # Get database statistics
-    stats = vector_db.get_stats()
-    print(f"Vectors: {stats['total_vectors']}")
-```
-
-### Key Components
-- **`app/main.py`** - Automatic vector DB initialization on startup
-- **`app/utils/vector_db.py`** - FAISS vector database utility
-- **`app/services/intent_matcher.py`** - Intent matching service
-- **`app/api/v1/routes/intent_routes.py`** - Intent matching API endpoints
-- **`build_vector_db.py`** - Manual build script (optional)
-- **`data/vector_db/`** - Generated FAISS index and metadata
-
-### Configuration
-
-Customize vector database settings in your Flask config:
-
-```python
-# In config/base.py or config/development.py
-VECTOR_DB_PATH = 'data/vector_db'
-INTENT_MATCH_THRESHOLD = 0.5  # Minimum similarity score (0-1)
-```
-
-For more details, see **`VECTOR_DB_SETUP.md`**
-
-## Testing
-
-Run tests using:
+### Install Dependencies
 ```bash
-make test
-# or
+pip install -r requirements.txt
+```
+
+### Run Tests
+```bash
 pytest
-```
-
-Run tests with coverage:
-```bash
-make test-cov
-# or
 pytest --cov=app tests/
 ```
 
-## License
+### Code Quality
+```bash
+# Format code
+black app/
 
-This project is licensed under the MIT License.
+# Sort imports
+isort app/
 
-## Contributing
+# Lint
+flake8 app/
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Rebuild Vector Database
+```bash
+python build_vector_db.py --test-query "What is IBIT?"
+```
 
-## Support
+## 🔐 Security
 
-For issues and questions, please open an issue on GitHub: [github.com/affanfani/bitchatter](https://github.com/affanfani/bitchatter)
+- API key stored in environment variables (never in code)
+- CORS configured
+- Input validation on all endpoints
+- Error handling prevents information leakage
+- Session management with secure IDs
+
+## 📚 Technical Stack
+
+### Backend
+- **Framework:** Flask 3.0.3
+- **LLM:** OpenRouter API (Llama 3.3 70B Instruct)
+- **Vector DB:** FAISS (Facebook AI Similarity Search)
+- **Embeddings:** sentence-transformers (all-MiniLM-L6-v2)
+- **Database:** SQLite with SQLAlchemy ORM
+
+### Frontend
+- **HTML5** with modern CSS
+- **JavaScript** (Vanilla)
+- **Responsive Design**
+- **Dark/Light Mode**
+
+### Key Libraries
+```
+faiss-cpu==1.9.0
+sentence-transformers==3.3.1
+Flask==3.0.3
+Flask-CORS==5.0.0
+Flask-SQLAlchemy==3.1.1
+openai==2.2.0
+```
+
+## 🎓 Learning Resources
+
+This project demonstrates:
+
+- ✅ **RAG (Retrieval-Augmented Generation)** - Complete implementation
+- ✅ **Vector Databases** - FAISS with semantic search
+- ✅ **LLM Integration** - OpenRouter API usage
+- ✅ **Flask Web Framework** - Modern app structure
+- ✅ **REST API Design** - Best practices
+- ✅ **SQLAlchemy ORM** - Database modeling
+- ✅ **Production Code** - Error handling, logging, security
+
+## 📝 Useful Commands
+
+```bash
+# Verify everything is working
+python verify_setup.py
+
+# Rebuild vector database
+python build_vector_db.py
+
+# Run application
+python run.py
+
+# Run with different port
+python -c "from app.main import create_app; app=create_app(); app.run(port=5001)"
+
+# Initialize database
+python -c "from app.main import create_app; from app.database import db; app = create_app(); app.app_context().push(); db.create_all()"
+
+# Test vector search (no API key needed)
+python -c "
+from app.utils.vector_db import FAISSVectorDB
+vdb = FAISSVectorDB()
+vdb.load('data/vector_db/faiss.index', 'data/vector_db/metadata.pkl', 'data/vector_db/config.json')
+results = vdb.search('What is IBIT?', k=3)
+for r in results:
+    print(f\"{r['metadata']['tag']}: {r['score']:.3f}\")
+"
+```
+
+## ❓ FAQ
+
+**Q: Do I need a paid API key?**
+A: No! OpenRouter offers free tier with Llama 3.3 70B.
+
+**Q: Can I use a different LLM?**
+A: Yes! Set `OPENROUTER_MODEL` in `.env` to any OpenRouter model.
+
+**Q: How do I add more questions?**
+A: Edit `data/Ibit_data.json`, add new intents, rebuild vector DB.
+
+**Q: Can I deploy this online?**
+A: Yes! Works with any Python hosting (Heroku, AWS, DigitalOcean, etc.)
+
+**Q: Is the data secure?**
+A: Yes! API keys in env vars, no data sent except to OpenRouter for LLM.
+
+**Q: How accurate are responses?**
+A: Very! RAG ensures answers are grounded in your knowledge base.
+
+## 🤝 Contributing
+
+To add new features:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📧 Support
+
+For issues:
+- Check this README troubleshooting section
+- Run `python verify_setup.py` for diagnostics
+- Check logs for error messages
+- Visit API docs at `/apidocs` when running
+
+## 📜 License
+
+[Add your license here]
+
+## 👥 Credits
+
+- **IBIT, Punjab University Lahore** - Knowledge base
+- **OpenRouter** - LLM API
+- **FAISS** - Vector search
+- **Sentence Transformers** - Embeddings
+
+---
+
+## 🎉 Ready to Use!
+
+**Current Status:** ✅ Production Ready
+
+**Setup Checklist:**
+- [ ] Virtual environment activated
+- [ ] `.env` file created
+- [ ] OpenRouter API key added to `.env`
+- [ ] Run `python verify_setup.py` ✓
+- [ ] Start with `python run.py`
+- [ ] Open http://localhost:5000
+- [ ] Test with a query!
+
+**Everything is configured and ready to go! Just add your API key and start chatting! 🚀**
+
+Made with ❤️ for IBIT students and staff

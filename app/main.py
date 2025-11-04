@@ -31,7 +31,16 @@ def create_app(config_name=None):
     if config_name is None:
         config_name = os.environ.get('FLASK_ENV', 'development')
     
-    app = Flask(__name__)
+    # Configure template and static folders to point to root directory
+    base_dir = Path(__file__).parent.parent
+    template_folder = base_dir / 'templates'
+    static_folder = base_dir / 'static'
+    
+    app = Flask(
+        __name__,
+        template_folder=str(template_folder),
+        static_folder=str(static_folder)
+    )
     app.config.from_object(config[config_name])
     
     # Configure logging
@@ -52,19 +61,7 @@ def create_app(config_name=None):
     # Register error handlers
     register_error_handlers(app)
     
-    # Root endpoint
-    @app.route('/')
-    def index():
-        return jsonify({
-            "message": "University Department Chatbot API",
-            "documentation": "/apidocs",
-            "api": {
-                "root": "/api",
-                "v1": "/api/v1",
-                "health": "/api/v1/health",
-                "chat": "/api/v1/chat/message"
-            }
-        })
+    # Note: Root endpoint is now handled by web_bp to serve the UI
     
     return app
 
@@ -159,9 +156,15 @@ def init_extensions(app):
 
 
 def register_blueprints(app):
-    """Register API blueprints"""
+    """Register API blueprints and web routes"""
     from app.api.api import register_api_blueprints
+    from app.web import web_bp
+    
+    # Register API blueprints
     register_api_blueprints(app)
+    
+    # Register web blueprint for UI
+    app.register_blueprint(web_bp)
 
 
 def register_error_handlers(app):
